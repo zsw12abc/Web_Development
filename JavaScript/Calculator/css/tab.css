@@ -1,0 +1,41 @@
+body
+{
+	background-color:#abcdef;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+}
+#box
+{
+	width: 99%;
+	height: 30px;
+	margin: 3px auto auto auto;
+}
+.tab
+{
+	background:url("images/1.jpg") repeat-x;
+	text-align: center;
+	width: 33%;
+	height: 30px;
+	margin: 0px auto;
+	position: relative;
+	float: left;
+}
+#box1
+{
+	background: #FCAB7E;
+}
+#box2
+{
+	background: #7D71E3;
+}
+#box3
+{
+	background: #71D7E3;
+}
+.col
+{
+	display: none;
+}

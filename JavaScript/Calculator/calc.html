@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>计算器</title>
+	<link rel="stylesheet" type="text/css" href="css/calc.css">
+	<link rel="stylesheet" type="text/css" href="css/tab.css">
+	<script src="js/calc.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/tab.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body onload = "cls()">
+	<div id = "box">
+		<div id = "box1" class="tab" onmouseover="changeColor1()" onmouseout="reColor1()" onclick="ordinary()">普通型</div>
+		<div id = "box2" class="tab" onmouseover="changeColor2()" onmouseout="reColor2()" onclick="science()">科学型</div>
+		<div id = "box3" class="tab" onmouseover="changeColor3()" onmouseout="reColor3()" onclick="program()">程序型</div>
+</div>
+
+<h3  id = "h3" align="center" style="margin:20px auto auto auto">普通型计算器</h3>
+<form name="form" method="post" action="javascript:doit()">
+<div align="center" style="margin:45px auto auto auto">
+		<input type="text" name="input" id="in" size="40"/>
+</div>
+<table style="margin:10px auto">
+	<tr>
+		<td><input type="button"value="+" onclick="form.input.value+='+'">
+		<td><input type="button"value="-" onclick="form.input.value+='-'"></td>
+		<td><input type="button"value="*" onclick="form.input.value+='*'"></td>
+		<td><input type="button"value="/" onclick="form.input.value+='/'"></td>
+		<td><input type="button"value="+/-" class = "col" id = "c11" onclick="neg()"></td>
+		<td><input type="button"value="("  class = "col" id = "c12"onclick="form.input.value+='('"></td>
+		<td><input type="button"value="!"  class = "col" id = "c13"onclick="fac()"></td>
+		
+	</tr>
+	<tr>
+		<td><input type="button"value="1" onclick="form.input.value+='1'"></td>
+		<td><input type="button"value="2" onclick="form.input.value+='2'"></td>
+		<td><input type="button"value="3" onclick="form.input.value+='3'"></td>
+		<td><input type="button"value="sin" onclick="sin()" ></td>
+		<td><input type="button"value="asin" class = "col" id = "c21" onclick = "asin()"></td>
+		<td><input type="button"value=")"  class = "col" id = "c22"onclick="form.input.value+=')'"></td>
+		<td><input type="button"value="ln"  class = "col" id = "c23"onclick = "ln()"></td>
+	</tr>
+	<tr>
+		<td><input type="button"value="4" onclick="form.input.value+='4'"></td>
+		<td><input type="button"value="5" onclick="form.input.value+='5'"></td>
+		<td><input type="button"value="6" onclick="form.input.value+='6'"></td>
+		<td><input type="button"value="cos" onclick="cos()" ></td>
+		<td><input type="button"value="acos"  class = "col" id = "c31"onclick="acos()" ></td>
+		<td><input type="button"value="^2"  class = "col" id = "c32"onclick="square()" ></td>
+		<td><input type="button"value="二"  class = "col" id = "c33"onclick="binary()" ></td>
+	</tr>
+	<tr>
+		<td><input type="button"value="7" onclick="form.input.value+='7'"></td>
+		<td><input type="button"value="8" onclick="form.input.value+='8'"></td>
+		<td><input type="button"value="9" onclick="form.input.value+='9'"></td>
+		<td><input type="button"value="tan" onclick="tan()"  ></td>
+		<td><input type="button"value="atan"  class = "col" id = "c41"onclick="atan()"></td>
+		<td><input type="button"value="√"  class = "col" id = "c42"onclick = "root()"></td>
+		<td><input type="button"value="八"  class = "col" id = "c43"onclick="octal()"></td>
+	</tr>
+	<tr>
+		<td><input type="button"value="Back" onclick="bs()"></td>
+		
+		<td><input type="button"value="0" onclick="form.input.value+='0'"></td>
+		<td><input type="button"value="=" onclick="doit()"></td>
+		<td><input type="button"value="cls" onclick="cls()"></td>
+
+		<td><input type="button"value="."  class = "col" id = "c51"onclick="form.input.value+='.'"></td>
+		<td><input type="button"value="π"  class = "col" id = "c52"onclick="form.input.value+=Math.PI"></td>
+		<td><input type="button"value="十六"  class = "col" id = "c53"onclick="hex()"></td>
+	</tr>	
+</table>
+</form>
+</body>
+</html>
