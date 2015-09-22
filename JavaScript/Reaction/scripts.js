@@ -14,6 +14,7 @@ var reactionTime;
 function makeBox() {
 
     var time = Math.random();
+    var size = Math.random() * 100;
 
     time = time * 5000;
 
@@ -22,19 +23,23 @@ function makeBox() {
         if (Math.random() > 0.5) {
 
 
-            document.getElementById("box").style.borderRadius = "100px";
+            document.getElementById("box").style.borderRadius = size + "px";
+            document.getElementById("box").style.width = size * 2 + "px";
+            document.getElementById("box").style.height = size * 2 + "px";
 
         } else {
 
 
             document.getElementById("box").style.borderRadius = "0";
+            document.getElementById("box").style.width = size * 2 + "px";
+            document.getElementById("box").style.height = size * 2 + "px";
 
 
         }
 
         var top = Math.random();
 
-        top = top * 300;
+        top = top * 500;
 
         var left = Math.random();
 
