@@ -1,0 +1,90 @@
+1. 下面代码执行结果是什么
+function printing() {
+   console.log(1); 
+   setTimeout(function() { console.log(2); }, 1000); 
+   setTimeout(function() { console.log(3); }, 0); 
+   console.log(4);
+}
+ 
+printing();
+
+执行结果为：
+
+1
+4
+3
+2
+
+2. 写一个函数 来判断是否为素数
+function isPrime(number) {
+
+   if (typeof number !== 'number' || !Number.isInteger(number)) {
+      return false;
+   }
+ 
+   if (number < 2) {
+      return false;
+   }
+    
+   if (number === 2) {
+      return true;
+   } else if (number % 2 === 0) {
+      return false;
+   }
+ 
+   var squareRoot = Math.sqrt(number);
+   for(var i = 3; i <= squareRoot; i += 2) {
+      if (number % i === 0) {
+         return false;
+      }
+   }
+ 
+   return true;
+}
+
+
+3. 从一个长度为 100 的有序数组中随机拿出 10 个随机的数，并且不能有重复。
+var gRandomArr = function( arr, length ){
+    var newArr = [],
+    i = 0,
+        index;
+
+    for( ; i < length; i++ ){
+        index = parseInt( Math.random() * arr.length );
+        newArr.push( arr[index] );
+        arr.splice( index, 1 );
+    }
+
+    return newArr;
+};
+
+gRandomArr( arr, 10 );
+
+
+4.网页中实现一个计算当年还剩多少时间的倒数计时程序
+
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>倒计时</title>
+</head>
+<body>
+<input type="text" value="" id="input" size="1000"/>
+<script type="text/javascript">
+   function counter() {
+      var date = new Date();
+      var year = date.getFullYear();
+      var date2 = new Date(year, 12, 31, 23, 59, 59);
+      var time = (date2 - date)/1000;
+      var day =Math.floor(time/(24*60*60))
+      var hour = Math.floor(time%(24*60*60)/(60*60))
+      var minute = Math.floor(time%(24*60*60)%(60*60)/60);
+      var second = Math.floor(time%(24*60*60)%(60*60)%60);
+      var str = year + "年还剩"+day+"天"+hour+"时"+minute+"分"+second+"秒";
+      document.getElementById("input").value = str;
+   }
+   window.setInterval("counter()", 1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+下面代码执行结果是什么
+function printing() {
+   console.log(1); 
+   setTimeout(function() { console.log(2); }, 1000); 
+   setTimeout(function() { console.log(3); }, 0); 
+   console.log(4);
+}
+ 
+printing();
+
+2. 写一个函数 来判断是否为素数
+
+3. 从一个长度为 100 的有序数组中随机拿出 10 个随机的数，并且不能有重复。
+
+4. 网页中实现一个计算当年还剩多少时间的倒数计时程序
