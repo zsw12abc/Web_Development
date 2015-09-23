@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Time</title>
+    <script type="text/javascript">
+    function time() {
+        dd = new Date();
+        document.form.time.value = dd.toLocaleString();
+        window.setTimeout("time()", 1000);
+    }
+    </script>
+</head>
+
+<body onload="time()">
+    <form name="form" action="#">
+        <input type="text" name="time" size=50>
+    </form>
+</body>
+
+</html>
