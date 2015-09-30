@@ -17,7 +17,7 @@ if ($error) {
 $result='<div class="alert alert-danger"><strong>There were error(s)
 in your form:</strong>'.$error.'</div>';
 } else {
-if (mail("test@greenhost.org.uk", "Comment from website!", "Name: ".
+if (mail("shaowei.zhang@linghang.education", "Comment from website!", "Name: ".
 $_POST['name']."
 Email: ".$_POST['email']."
 Comment: ".$_POST['comment'])) {
