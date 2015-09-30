@@ -1,0 +1,1857 @@
+<!DOCTYPE html><html><head><title>PHP Tutorial — PHP</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'></head><body><div id='preview-contents' class='note-content'>
+                        <div id="wmd-preview" class="preview-content"></div>
+                    <div id="wmd-preview-section-1" class="wmd-preview-section preview-content">
+
+</div><div id="wmd-preview-section-225653" class="wmd-preview-section preview-content">
+
+<h1 id="php-tutorial-php">PHP Tutorial — PHP</h1>
+
+<p><p class="note-tags "><code class="notebook">领航教育</code> <code>posts</code> <code>IT</code> <code>PHP</code> </p></p>
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><a href="#php-tutorial-php">PHP Tutorial — PHP</a><ul>
+<li><a href="#介绍">介绍</a></li>
+<li><a href="#安装">安装</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#注释">注释</a></li>
+<li><a href="#case-sensitivity">Case Sensitivity</a></li>
+<li><a href="#php-variables">PHP Variables</a><ul>
+<li><a href="#php-output-variable">PHP Output Variable</a></li>
+<li><a href="#php-variables-scope">PHP Variables Scope</a><ul>
+<li><a href="#global-and-local-scope">Global and Local Scope</a></li>
+<li><a href="#php-the-global-keyword">PHP The global Keyword</a></li>
+<li><a href="#php-the-static-keyword">PHP The static Keyword</a></li>
+</ul>
+</li>
+<li><a href="#php-echo-and-print-statements">PHP echo and print Statements</a></li>
+<li><a href="#php5-data-type">PHP5 Data Type</a><ul>
+<li><a href="#php-string">PHP String</a><ul>
+<li><a href="#get-length-of-string">Get Length of String</a></li>
+<li><a href="#count-number-of-words-in-a-string">Count number of words in a String</a></li>
+<li><a href="#reverse-a-string">Reverse a String</a></li>
+<li><a href="#search-for-a-specific-text-within-a-string">Search For a Specific Text Within a String</a></li>
+<li><a href="#replace-text-within-a-string">Replace Text Within a String</a></li>
+</ul>
+</li>
+<li><a href="#php-integer">PHP Integer</a></li>
+<li><a href="#php-float">PHP Float</a></li>
+<li><a href="#php-boolean">PHP Boolean</a></li>
+<li><a href="#php-array">PHP Array</a><ul>
+<li><a href="#php-indexed-arrays">PHP Indexed Arrays</a></li>
+<li><a href="#php-associative-arrays">PHP Associative Arrays</a></li>
+<li><a href="#php-multidimensional-arrays">PHP Multidimensional Arrays</a></li>
+</ul>
+</li>
+<li><a href="#php-object">PHP Object</a></li>
+<li><a href="#php-null-value">PHP NULL Value</a></li>
+</ul>
+</li>
+<li><a href="#php5-constants">PHP5 Constants</a><ul>
+<li><a href="#syntax-1">Syntax</a></li>
+</ul>
+</li>
+<li><a href="#php-5-operators">PHP 5 Operators</a><ul>
+<li><a href="#php-arithmetic-operatiors">PHP Arithmetic Operatiors</a></li>
+<li><a href="#php-assignment-operatiors">PHP Assignment Operatiors</a></li>
+<li><a href="#php-comparison-operators">PHP Comparison Operators</a></li>
+<li><a href="#php-increment-decrement-operators">PHP Increment / Decrement Operators</a></li>
+<li><a href="#php-logical-operators">PHP Logical Operators</a></li>
+<li><a href="#php-string-operators">PHP String Operators</a></li>
+<li><a href="#php-array-operators">PHP Array Operators</a></li>
+</ul>
+</li>
+<li><a href="#php-conditional-statement">PHP Conditional Statement</a><ul>
+<li><a href="#php-if-statement">PHP if Statement</a><ul>
+<li><a href="#syntax-2">Syntax</a></li>
+</ul>
+</li>
+<li><a href="#php-switch-statement">PHP Switch Statement</a><ul>
+<li><a href="#syntax-3">Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#php-loop">PHP Loop</a><ul>
+<li><a href="#php-while-loop">PHP while Loop</a><ul>
+<li><a href="#syntax-4">Syntax</a></li>
+</ul>
+</li>
+<li><a href="#php-dowhile-loop">PHP do…while Loop</a><ul>
+<li><a href="#syntax-5">Syntax</a></li>
+</ul>
+</li>
+<li><a href="#php-for-loop">PHP for Loop</a><ul>
+<li><a href="#syntax-6">Syntax</a></li>
+</ul>
+</li>
+<li><a href="#php-foreach-loop">PHP foreach Loop</a><ul>
+<li><a href="#syntax-7">Syntax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#php-function">PHP Function</a><ul>
+<li><a href="#syntax-8">Syntax</a></li>
+<li><a href="#php-default-argument-value">PHP Default Argument Value</a></li>
+<li><a href="#php-functions-returning-values">PHP Functions - Returning values</a></li>
+</ul>
+</li>
+<li><a href="#php5-sorting-arrays">PHP5 Sorting Arrays</a></li>
+<li><a href="#php-global-variables-superglobals">PHP Global Variables - Superglobals</a><ul>
+<li><a href="#php-globals">PHP $GLOBALS</a></li>
+<li><a href="#php-server">PHP $_SERVER</a></li>
+<li><a href="#php-request">PHP $_REQUEST</a></li>
+<li><a href="#php-post">PHP $_POST</a></li>
+<li><a href="#php-get">PHP $_GET</a></li>
+<li><a href="#request-post-和-get的区别"><span class="MathJax_Preview"></span><span class="MathJax_SVG" id="MathJax-Element-43-Frame" role="textbox" aria-readonly="true" style="font-size: 100%; display: inline-block;"><span><img type="image/png" width="91" height="17" longdesc="__SVG__undefined" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALYAAAAiCAYAAADyByNRAAAQCElEQVR4Xu3cCfR321gH8O8logyRkrGFopDInFARJVSKsjQKmWUsmSsyZKwUhUY0SoUoUVSmoswKmccUZSjj+lx7L/vd95yz93mn/12v91nrrnvv/5yzz97Pfobv893P+Z2Sz185d5KzJDlzkv9P8j/ln89fjSyv/BxJzpnkjEVPH0zy4ebWMyS5YJK3np4Ud8pxnsyFkzw2yUeSfPoI3/1PSX4xyad2jHOBJN+e5BpJLpbkbEk+WTbtvUleneRXk7xhYszvSvLjST62sRb65Tw/lIRBtPLFSR5djGZpDf+Z5I5JPtE89BVJfuMo6e/lSR5W1r+03IskuUOSr09yrrLGL0jyviSvSPInSf4rya2TXDfJNyb5QBno25L8xMbYE+o95JZ3J/mpouupZ4+3YX9JkjsluXSSqyZhaL28J4mFmNuXJ7GZS/IrSW4/tcrPRpS7Jblmkssm+d8kz0/yf8XgvMe1syd5V5JfT3K/wdiXSXLDJBdP8t3l2faRdyb5hyT/UhyQA7RypiS3KAbxLY0uPpTk75P8QZLf7hyXM9w1yUWTXCfJ+RbmaG3/nkQk3dLfryW5zcoab5Dk4Um+ulz/m2LEDFkEv3r37qcl+d7GwX83yc0m92bmtifvHe94G3a7iJ9O8gvNH95RNvr1ZTOlPlH9CwtcuFwSUfJ7yjM3T/KkCa24/yFlk8CNpyZ5RJI3F8M2BIPhbPdJ8p1lTNH0JyfGd4t1WE8VznGrJH8x+fy9k/xcufeeSR46kYnuXu6rr6A/73xtoz+ZoMKtryrGcaPywC1L9O+nyKh/p2QSTkYHv1dgSL2Xwf9ycS5/e2ASayDnTfKcJByfHv4yySuTPK/Rt+j7I82LGa71y572QvCRDb9pMNdV9R6kYYugUmGVZ5UI2KbefuLm+/QklH+pJK8ZGM4jk3AAUcYmyRa/ufGMlMpZaiQ0R5FrJOCLlFzFpkvjs8J4zFWkFQ1lrJHcuThoqz9OLAttyVOS/ECBGP/a3filRb9XK3+/b+Nw/ZhXKQYsy4nWoAlhlGAOOMd5/q570P32UJaq0j5f/wYKyXjg4hWTvG6kkPb6QRr2Hyep0cOc7tEZ+to6HlCeu3YSsGVNWmMTqUVU+H4kTyjO4D4RB3b8j42HRBipGK6sAsO/YPSi5jpn+tEkv1X+PfMoB22jnojHEEfCWX84yXckEeVb+eYSWevfrpUEDFkSweLZJdNdvqlLfjYJp/PsSxYevESSlxWDdZkTg6W9jkG1P03C2cAugWlaDsqwFSPSNKMhcKH/lrJGwmBhTJBhLbr/Uoe/21Q5Gl/k9Y4qHOn+Gw/ZKGm2Rvk3lqjLKWZE3fHMsrmwumg2EiyFDMcgqoBqirqRWIvnwLoe9/dZ9GsHkVKUBnG+Ncn7kzBG+yqTMu4lUVeoYapYh3Vjplphmwwb27In+506xkEZ9tcladPgi4qh1qp6a3NunOSspbBauq9P0SKOIq+lqLbGl2L/sbmB0UmVvRHUW/qNEr3bTDQyNI7x0hK5RLm3jR5IcskkL26invkyVIzFSMAVzrRUn/S4HeTbqhN+v9RAxlQPgRmPSWIchr4kCmIsUZW1TMNJnphEISoz7JKDMmywQ0FXRVr9sZWZiwhvmiimPC4SUQIFExDkB5P82Q6tfEMSVGIVUfD6C2m7Xu83Cs31+B3vcz+GQpElC83Ql31WMYcWlrSvR2tK8wqzkahBHtXc9Nwk11uIpvUW+/jfO9aLpRGF20wDk2OOlgTMOyxq+CAMGxfK0GC8Kt+XBObuRfUt4sJYqv0t+aIyrqhX5Y+SiPB7hIOJFFVACgUdiNGLjfqrwgC4BlJdaWKu7TgivFQ8W6jaM7qq7JCxMAjtnOv4IJvija5nYB7qklMr2KpgkFCMa4K9mnEaz+PEW7hkTvZrJtPs2cMDgSIOaUQCkZisFQ+uiR48WkoUfbeEc/xhd4PKG1+9R3qcaX5opyXDrgxAHR88wKz0hzFr74fLRWoGeOUJlsc4uP+/LQdMVX9r82OUrgkMIuuM1EK2vZdhG+tIpc/UaEWF7FGXg4jYIk2lhixI8QAffryszsGC6Cu1PqgwBU7gtmSJQhLpYd1ZI6vjo91a/lqaBBF6BsH9GADcd5W9NJ9DIY5nrvQyU/lz1pap8LyIXGsA+lODyFS4eDBlT/F1ngIXKuVnbXQIN7dF315jXMrU6hMs1FGXgzDsnrH453JYYnH1eFvVj7v075moWw2kVdBsam+fkYLBpJZjVZgxnN5BpGAwQjapwpH8bVZ+Psm9ktDJyHnrmP1hEOhQqTL6Y0CouKo/DgPX7hHFPbhTTx6rcYvch2uIMjWHhPmJTAji4e6PumwZto3j/b2ofrcOUbYmyVBFa/TQjEj/UunowKJ3Flh3N6lf4BH+uT3GX+OWvzLJXzeQygbBi7PNQE4EZSvcMX2gDEey5Hhbz9Afp1/KNqN3gUaiPdxdRUbRxgBC7BW6oa8qMo1MqDg86rJm2I6xpdnzNxDBy91fj7r1DbywFE+z6R4virSvxYniASug4QcbwJF024leTq1QPS01tKQA0Ul0cWBTBdbV7DSLK+tzIFEf3RSTS6eVPaRCC6IVZwspuFpPCBrSgY7ekpEwMvi6Oh7DdbCjgYv+atOVk8WfKWtpi8zR+P11OtSzUlkm1xk3zE7HewQN2EIiMFO2OiayFbEdokjB+gSqiIyOS0UrlbjmIv9PeW+ZmKFehsc1960VD3hanXYzGMxcMBNt2nTCeLuJ+bS3LLENWxGv36jZk7/6zlrs7uG9e86cEy4ZLm7cETR9HwkuNld0KX22xi0ggRGzAW0p08xAzJ1b+LnbRxib4dYDA6lDRKrsRMsZo+JMdOuI21vBkHYj1gxXA4205TRyhMH0jLyq04CIzwn3CJamhyFYmaUTNMWZCA1GVIFL+3lsvZ/BWf9aM9LSs7OcOZ3IjDh5TWVHKubYc/N7mJKlTMMxZk9nd89/ZNhtuu0LHCdDonnliZcaWdoJVWqL0ZKt4kERhhUxdn/U2i/SeD3BD5agFPeINtX26Nz8OJYuwF44PExcKUunqGi+US1Qx/mycnTOGdo+i6357uHMBRkOeZOJHmZYH4wZ6bk6Yp2jwMM+1DMjkd31kVfZk6VGYy9eHxl2m27hKim/imdNVvccGUWenrlgGIqHj67MXPqaUVp/PG84xj5zIFFfDbM6saxO5++MXJ/IkvTOBIfCtbMfTyiIZQfOh1VZ00H77p4z9yzDWuP3QYcR9298WFddg0XaEvy5PauQTyblQG+fsLzZTDMx1NwtW4atKNOQI90qbK7QpQ6Ks1ARh2wdjbpeqa06s8MpHmQFuLIt0NBHjKRtuocxZ76CqXPp5zaq2M3DqWb7fMtnj7SPaXEwoUAffdBQxzpSztw4Mpnis54Z2H/RU1Zaa1pq16KX/fvLHziNxqulg6v2Gbw4CrUeox/O6exIn6e5vmXY+mH1aJC+AwszgrCvHwrYKOzBWsRawqQchpJnBTQRQbWH/lvzUNsdV/8806td71V84qqrY3AIKXytf8FzMLzDjyqqfYczM+J9mr7oChsyqiGMKaJy6LYNQb3z5zMvLPc4tlcz6P2ofex05+QTDy7jjMTpY3UAR+OyzShi99kNm7K7DXU0sf76lmG3DIZoYeMYqP5YG0tRFMOLVc5bNFdfmDFMaWyWX3WvRiFMyVLnXM9j197mkT56hzMva1nqI27HEvlaWIZaa78G2npvnavW2NuOJliu16b7SvOZpznMcuYcCEYWqNpGK4cmsjIu2d+36NGeNZLVOMkIRvUdg2sF+aQqTr0NWlDjrXaDrhm2iMxgUVIEd6mCleIJKknBpFLWZFNT29rkGGPb5IRR4Bij54ynjVSDDw587WRPmhN5wCfiXXXuWwpDY9Xv/qRUvO1MBO37XZ5RGKNRZ56oiO7EXTMkVOmM9Px6f4y+NYamLBn1a0ox3kKotj7xjq0uyD4zzrAi7EtWqZ/bmefeTNOvDZvigwpByakrxzlN4btm2Kp2uJUhgwt6J3inhn0CF+JtZ4slfLVIWEWzknS/JrKCKO8ZWJTBjjrBzKd+d8cRKdMB0pLg6DkL5yIOSvDeW/CjH6fFvPhc79dnsmbc9OdbRjBJOm/bQ0fG3Rdfo65FPy1Bfw63qv6WTnHbWkFrA32s9YO3kRcMASdGXXlHo/5pdSNzyZT1WN41NQL27BDEsGbYjngrXVZpPhjUJz1OIxn7TMcdBYMRjKhGU5OB8bAQUilvgyE5CUrLhlyoGED7DIZGv/CWeE/t6/YOxuc9ChZj6e9V/PiCWrGrALI+3zXOfOTQvpvudMLVPmhpnM4YrJNAY6PSnDCCdbKBOez5mocDYpPMEcVYhfEx7l5/AhLWYkl/Sw1afbcdB1fUqznoTMrHTqHrwE9RG5zRn77WRkwv7jMHem1PhM1fxBY0NW2tfbyxtsd922u9D19/SPZbM+yWJWh7pWs1b8BRfwMvcmRaf79jFJW2rkvdUuro413rkaY04lc8KgrbBJFS+uI4YJXN87HDCE+P5o0mu0vHyihAzdkcalEqyjF6OpwRVJ7MeLT0x7H6DGYu9lExq40CwyVwVZ1hNBS7leLDXSuU1z6sBWEfXIzZMwJJLxwey8Yp1Rl7msZkckwcCNXKaYr3JcPWMoqXlcpNAjarfQxtI8uoRVO0ceI0C1e2NluBsoeXhoExCH7KwMYwXlEORBEt1AUjmsp8FCgzdYB3YGu8kyGLctZNvzA7DK4GmC2WvVvUAwWPhv58ua4maseyNucQYKHPv/w/vdlj/wgE1i6qKlaxMrLf6BM7gUOmHom+IA6yt59H1pNB6BYFfdNywjqM2FKeyCgNKfJE7Fr56s6Tbnm2TZICpN3Tm5innxlgaH5Yx+9Y2Nw9XYkyBBiA1hudyrXrp/gKrRjGTI/1QekPVKKX3nkYjf0XxRn2zEHPQazBHiMVZKNDTn2XIjYIIWKTpS+02yINXq33HsTClt7ph29gO8WNSK1gcwDBwHQR6kociUIPrsX6tN9mjp47ef34aUDgAY3ANUX7IbJk2FJTpcqWcLS0CxbwaCkWBbcnoh3Lpfc/zdW+q+I62I7B+7Uixo7RgA016PN+TAznVhjO/hLUsVzTybFPqwH7LOAgMRZ/pq01bIUVaMFYpXIicqmU23Tan4IxBCT/TF/HsdokKdUP4qDRWiZl9D64jFETdJEjYmv1Y5f1J8dGY5y8fnw1gG+XSf30w+pXR9WwbS7qhyfAVVVq0abqb0+Y8J1SQP04gPEj7Ec/r3UsVMCQwSHf6PFg3KpCiaOqBRQzbXPT1hx8uoS52HNUfSzWdHLMdQ3YT5l1c4/6iK0y7oXx9tFYRdt+oi/ajarlY7VZojXHc9qIZusLISwFLhlrgQf13+7x3/VAhiOo+mG203Oxd6x0eMKNO2pbPeEWXH7rWTSXmbAkqv7RCdqJqIcTek2fAYIWlFAMmiioAAAAAElFTkSuQmCC" style="margin-top:0;margin-bottom:0;"></span></span>_POST 和 $_GET的区别</a></li>
+</ul>
+</li>
+<li><a href="#php-form-handling">PHP Form Handling</a></li>
+<li><a href="#php-5-form-validation">PHP 5 Form Validation</a><ul>
+<li><a href="#validate-form-data-with-php">Validate Form Data With PHP</a></li>
+</ul>
+</li>
+<li><a href="#php-forms-required-fields">PHP Forms - Required Fields</a><ul>
+<li><a href="#php-display-the-error-messages">PHP - Display The Error Messages</a></li>
+<li><a href="#完整代码">完整代码</a></li>
+</ul>
+</li>
+<li><a href="#php-5-forms-validate-e-mail-and-url">PHP 5 Forms - Validate E-mail and URL</a><ul>
+<li><a href="#php-validate-name">PHP - Validate Name</a></li>
+<li><a href="#php-validate-e-mail">PHP - Validate E-mail</a></li>
+<li><a href="#php-validate-url">PHP - Validate URL</a></li>
+<li><a href="#完整代码-1">完整代码</a></li>
+</ul>
+</li>
+<li><a href="#php-keep-the-values-in-the-form">PHP - Keep The Values in The Form</a></li>
+<li><a href="#php5-data-and-time">PHP5 Data and Time</a><ul>
+<li><a href="#the-php-date-function">The PHP Date() Function</a></li>
+<li><a href="#get-a-simple-date">Get a Simple Date</a></li>
+<li><a href="#get-a-simple-time">Get a Simple Time</a></li>
+<li><a href="#get-your-time-zone">Get Your Time Zone</a></li>
+<li><a href="#create-a-date-with-php-mktime">Create a Date With PHP mktime()</a></li>
+<li><a href="#create-a-date-from-a-string-with-php-strtotime">Create a Date From a String With PHP strtotime()</a></li>
+</ul>
+</li>
+<li><a href="#php5-include-files">PHP5 Include Files</a><ul>
+<li><a href="#php-include与require的区别">PHP include与require的区别</a></li>
+</ul>
+</li>
+<li><a href="#php-5-file-handling">PHP 5 File Handling</a><ul>
+<li><a href="#php-readfile-function">PHP readfile() Function</a></li>
+</ul>
+</li>
+<li><a href="#php-open-file-fopen">PHP Open File - fopen()</a><ul>
+<li><a href="#php-read-file-fread">PHP Read File - fread()</a></li>
+<li><a href="#php-close-file-fclose">PHP Close File - fclose()</a></li>
+<li><a href="#php-read-single-line-fgets">PHP Read Single Line - fgets()</a></li>
+<li><a href="#php-check-end-of-file-feof">PHP Check End-Of-File - feof()</a></li>
+<li><a href="#php-read-single-character-fgetc">PHP Read Single Character - fgetc()</a></li>
+<li><a href="#php-write-to-file-fwrite">PHP Write to File - fwrite()</a></li>
+</ul>
+</li>
+<li><a href="#php5-file-upload">PHP5 File Upload</a><ul>
+<li><a href="#configure-the-phpini-file">Configure The “php.ini” File</a></li>
+<li><a href="#create-the-html-form">Create The HTML Form</a></li>
+<li><a href="#create-the-upload-file-php-script">Create The Upload File PHP Script</a></li>
+<li><a href="#check-if-file-already-exists">Check if File Already Exists</a></li>
+<li><a href="#limit-file-size-and-type">Limit File Size and Type</a></li>
+<li><a href="#完整的代码">完整的代码</a></li>
+</ul>
+</li>
+<li><a href="#php5-cookies">PHP5 Cookies</a><ul>
+<li><a href="#create-cookies-with-php">Create Cookies With PHP</a></li>
+<li><a href="#php-createretrieve-a-cookie">PHP Create/Retrieve a Cookie</a></li>
+<li><a href="#modify-a-cookie-value">Modify a Cookie Value</a></li>
+<li><a href="#delete-a-cookie">Delete a Cookie</a></li>
+<li><a href="#check-if-cookies-are-enabled">Check if Cookies are Enabled</a></li>
+</ul>
+</li>
+<li><a href="#php-5-sessions">PHP 5 Sessions</a><ul>
+<li><a href="#start-a-php-session">Start a PHP Session</a></li>
+<li><a href="#get-php-session-variable-values">Get PHP Session Variable Values</a></li>
+<li><a href="#modify-a-php-session-variable">Modify a PHP Session Variable</a></li>
+<li><a href="#destroy-a-php-session">Destroy a PHP Session</a><ul>
+<li><a href="#author-shaowei-zhang">Author: Shaowei Zhang</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div id="wmd-preview-section-3" class="wmd-preview-section preview-content">
+
+<h2 id="介绍">介绍</h2>
+
+<blockquote>
+  <p>PHP  (PHP Hypertext Preprocessor)的优势:</p>
+  
+  <ul><li>跨平台兼容</li>
+  <li>兼容几乎所有服务器</li>
+  <li>可以支持大多数的数据库</li>
+  <li>开源免费</li>
+  <li>文件以.php结尾</li>
+  </ul>
+  
+  <p>PHP能做什么:</p>
+  
+  <ul><li>生成动态网页</li>
+  <li>在服务端可以对文件进行多种处理</li>
+  <li>可以收集信息和数据</li>
+  <li>可以收发cookies</li>
+  <li>可以修改维护数据库</li>
+  <li>可以加密信息</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-4" class="wmd-preview-section preview-content">
+
+<h2 id="安装">安装</h2>
+
+<blockquote>
+  <p>由于PHP是服务器语言, 所以开发者必须要有一个服务器或者本地服务器才能运行PHP语言. </p>
+  
+  <ul><li>安装一个web server</li>
+  <li>安装PHP</li>
+  <li>安装数据库 (e.g.MySQL)</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-5" class="wmd-preview-section preview-content">
+
+<h2 id="syntax">Syntax</h2>
+
+<blockquote>
+  <p>PHP可以放在文本的任意地方, 只需要以<code>&lt;?php</code>开头和以<code>?&gt;</code>结尾即可</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-6" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// PHP code goes here</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+<blockquote>
+  <p>PHP文件的扩展名是.php. 一般性包括<code>&lt;html&gt;&lt;/html&gt;</code></p>
+</blockquote>
+
+</div><div id="wmd-preview-section-7" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>My first PHP page<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello World!"</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-8" class="wmd-preview-section preview-content">
+
+<h2 id="注释">注释</h2>
+
+<blockquote>
+  <p>在一个团队合作写程序的时候, 必要的注解是很重要的</p>
+  
+  <ul><li>可以让别人大概的了解开发者这段代码的作用</li>
+  <li>方便自己之后的debug和代码复用, 防止忘记代码的作用</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-9" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// This is a single-line comment</span><br><br><span class="hljs-comment"># This is also a single-line comment</span><br><br><span class="hljs-comment">/*<br>This is a multiple-lines comment block<br>that spans over multiple<br>lines<br>*/</span><br><br><span class="hljs-comment">// You can also use comments to leave out parts of a code line</span><br><span class="hljs-variable">$x</span> = <span class="hljs-number">5</span> <span class="hljs-comment">/* + 15 */</span> + <span class="hljs-number">5</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$x</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-10" class="wmd-preview-section preview-content">
+
+<h2 id="case-sensitivity">Case Sensitivity</h2>
+
+<blockquote>
+  <p>PHP不是Case Sensitivity, 这意味着对于关键字(<code>if, while, echo...</code>)来说, 大小写都可以识别, 然而对于设定的函数名来说, 还是Case Sensitivity(区分大小写的)</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-11" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">ECHO</span> <span class="hljs-string">"Hello World!&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello World!&lt;br&gt;"</span>;<br><span class="hljs-keyword">EcHo</span> <span class="hljs-string">"Hello World!&lt;br&gt;"</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-12" class="wmd-preview-section preview-content">
+
+<h2 id="php-variables">PHP Variables</h2>
+
+<blockquote>
+  <p>与别的语言不同, PHP声明variable的时候需要在之前添加符号<code>$</code></p>
+</blockquote>
+
+</div><div id="wmd-preview-section-13" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$txt</span> = <span class="hljs-string">"Hello world!"</span>;<br><span class="hljs-variable">$x</span> = <span class="hljs-number">5</span>;<br><span class="hljs-variable">$y</span> = <span class="hljs-number">10.5</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+<blockquote>
+  <p>variable的命名有要求</p>
+  
+  <ul><li>variable name只能以字母或下划线_开头, 不能以数字开头</li>
+  <li>variable name可以含有数字, 字母和下划线</li>
+  <li>variable name是<strong><em>case sensitive</em></strong>的, 也就是说<code>$hello</code>与<code>$HELLO</code>是两个不同的variable</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-14" class="wmd-preview-section preview-content">
+
+<h3 id="php-output-variable">PHP Output Variable</h3>
+
+<blockquote>
+  <p>PHP中用<code>echo</code>来表示输出, <code>echo</code>可以输出variable, 还可以对variable进行简单地处理和计算.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-15" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$txt</span> = <span class="hljs-string">"W3Schools.com"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"I love "</span> . <span class="hljs-variable">$txt</span> . <span class="hljs-string">"!"</span>;<br><span class="hljs-variable">$x</span> = <span class="hljs-number">5</span>;<br><span class="hljs-variable">$y</span> = <span class="hljs-number">4</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$x</span> + <span class="hljs-variable">$y</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-16" class="wmd-preview-section preview-content">
+
+<h3 id="php-variables-scope">PHP Variables Scope</h3>
+
+<blockquote>
+  <p>由于PHP可以在一个文档的任意位置, 所以variable的scope就变得很重要了</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-17" class="wmd-preview-section preview-content">
+
+<h4 id="global-and-local-scope">Global and Local Scope</h4>
+
+<blockquote>
+  <p>一个在function外部声明的variable有<strong>Global Scope</strong>, 可以且仅可以在function外部执行调用.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-18" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$x</span> = <span class="hljs-number">5</span>; <span class="hljs-comment">// global scope</span><br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myTest</span><span class="hljs-params">()</span> </span>{<br>    <span class="hljs-comment">// using x inside this function will generate an error</span><br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;"</span>;<br>} <br>myTest();<br><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;"</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+<blockquote>
+  <p>在function内部声明的variable有<strong>Local Scope</strong>, 可以且仅可以在funciton内部执行</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-19" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myTest</span><span class="hljs-params">()</span> </span>{<br>    <span class="hljs-variable">$x</span> = <span class="hljs-number">5</span>; <span class="hljs-comment">// local scope</span><br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;"</span>;<br>} <br>myTest();<br><br><span class="hljs-comment">// using x outside the function will generate an error</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;"</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-20" class="wmd-preview-section preview-content">
+
+<h4 id="php-the-global-keyword">PHP The <code>global</code> Keyword</h4>
+
+<blockquote>
+  <p><code>global</code>是PHP中的关键字, 可以让开发者在function内部调用外部的variable</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-21" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$x</span> = <span class="hljs-number">5</span>;<br><span class="hljs-variable">$y</span> = <span class="hljs-number">10</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myTest</span><span class="hljs-params">()</span> </span>{<br>    <span class="hljs-keyword">global</span> <span class="hljs-variable">$x</span>, <span class="hljs-variable">$y</span>;<br>    <span class="hljs-variable">$y</span> = <span class="hljs-variable">$x</span> + <span class="hljs-variable">$y</span>;<br>}<br><br>myTest();<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$y</span>; <span class="hljs-comment">// outputs 15</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+<blockquote>
+  <p>PHP会把所有的global variable都储存在一个叫<code>$GLOBALS[*index*]</code>的Array中, 其中的<code>index</code>就是variable name. 所以在function内部调用这个Array的话, 不但可以取到variable的值, 还可以对其进行修改</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-22" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$x</span> = <span class="hljs-number">5</span>;<br><span class="hljs-variable">$y</span> = <span class="hljs-number">10</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myTest</span><span class="hljs-params">()</span> </span>{<br>    <span class="hljs-variable">$GLOBALS</span>[<span class="hljs-string">'y'</span>] = <span class="hljs-variable">$GLOBALS</span>[<span class="hljs-string">'x'</span>] + <span class="hljs-variable">$GLOBALS</span>[<span class="hljs-string">'y'</span>];<br>} <br><br>myTest();<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$y</span>; <span class="hljs-comment">// outputs 15</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-23" class="wmd-preview-section preview-content">
+
+<h4 id="php-the-static-keyword">PHP The <code>static</code> Keyword</h4>
+
+<blockquote>
+  <p>在PHP function声明的variable, 在function运行完之后就会被销毁, 但有时候开发者不希望这个variable被销毁, 那么可以用<code>static</code>这个关键字</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-24" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myTest</span><span class="hljs-params">()</span> </span>{<br>    <span class="hljs-keyword">static</span> <span class="hljs-variable">$x</span> = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$x</span>;<br>    <span class="hljs-variable">$x</span>++;<br>}<br><br>myTest();<br>myTest();<br>myTest();<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-25" class="wmd-preview-section preview-content">
+
+<h3 id="php-echo-and-print-statements">PHP <code>echo</code> and <code>print</code> Statements</h3>
+
+<blockquote>
+  <p>在PHP中有两种输出方法, <code>echo</code>和<code>print</code>, 这两个不是函数, 而是语言结构, 用法上基本相同, <br>
+  最重要的不同点是:</p>
+  
+  <ul><li><code>echo</code>可以输出多个字符串, 而<code>print</code>只可以输出一个字符串</li>
+  <li><code>print</code>可以表现得像一个函数, 比如: <code>$result = print "Hello World";</code> </li>
+  <li><code>print()</code>返回值, 成功返回1, 否则返回0. 而<code>echo()</code>没有返回值</li>
+  <li><code>echo</code>相对速率比较快, 因为没有返回值</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-26" class="wmd-preview-section preview-content">
+
+<h3 id="php5-data-type">PHP5 Data Type</h3>
+
+<blockquote>
+  <p>对于PHP来说, 声明variable的时候不需要声明variable的类型, 然而开发者始终要很清楚的知道这个variable的类型, 因为不同的类型可以做不同的事情.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-27" class="wmd-preview-section preview-content">
+
+<h4 id="php-string">PHP String</h4>
+
+<blockquote>
+  <p>String就是字符串, 写的时候用双引号或者单引号包括进去</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-28" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-variable">$x</span> = <span class="hljs-string">"Hello world!"</span>;<br><span class="hljs-variable">$y</span> = <span class="hljs-string">'Hello world!'</span>;<br><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$x</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>; <br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$y</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-29" class="wmd-preview-section preview-content">
+
+<h5 id="get-length-of-string">Get Length of String</h5>
+
+<blockquote>
+  <p>PHP中用<code>strlen()</code>来返回string的长度</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-30" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> strlen(<span class="hljs-string">"Hello world!"</span>); <span class="hljs-comment">// outputs 12</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-31" class="wmd-preview-section preview-content">
+
+<h5 id="count-number-of-words-in-a-string">Count number of words in a String</h5>
+
+<blockquote>
+  <p><code>str_word_count()</code>可以返回string中的单词个数</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-32" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> str_word_count(<span class="hljs-string">"Hello world!"</span>); <span class="hljs-comment">// outputs 2</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-33" class="wmd-preview-section preview-content">
+
+<h5 id="reverse-a-string">Reverse a String</h5>
+
+<blockquote>
+  <p>PHP中用<code>strrev()</code>来颠倒String</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-34" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> strrev(<span class="hljs-string">"Hello world!"</span>); <span class="hljs-comment">// outputs !dlrow olleH</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-35" class="wmd-preview-section preview-content">
+
+<h5 id="search-for-a-specific-text-within-a-string">Search For a Specific Text Within a String</h5>
+
+<blockquote>
+  <p>PHP中提供了一个函数来让开发者可以在一个string中搜索一个特定的字符, <code>strpos()</code> <br>
+  如果搜索到了, 这函数会返回第一次复合的位置, 如果没有搜索到, 就会返回false</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-36" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> strpos(<span class="hljs-string">"Hello world!"</span>, <span class="hljs-string">"world"</span>); <span class="hljs-comment">// outputs 6</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-37" class="wmd-preview-section preview-content">
+
+<h5 id="replace-text-within-a-string">Replace Text Within a String</h5>
+
+<blockquote>
+  <p><code>str_replace()</code>可以用来替换string中的一些字节</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-38" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> str_replace(<span class="hljs-string">"world"</span>, <span class="hljs-string">"Dolly"</span>, <span class="hljs-string">"Hello world!"</span>); <span class="hljs-comment">// outputs Hello Dolly!</span><br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-39" class="wmd-preview-section preview-content">
+
+<h4 id="php-integer">PHP Integer</h4>
+
+<blockquote>
+  <p>Integer就是整数, 范围是介于-2147483648 到2147483647之间</p>
+  
+  <ul><li>Integer至少有一位数字</li>
+  <li>Integer不能含有空格或者逗号</li>
+  <li>Integer不能有小数点</li>
+  <li>Integer包含正负数</li>
+  <li>Integer有三种形式:  <br>
+  <ul>
+  <li>decimal 十进制</li>
+  <li>hexadecimal 十六进制 以0x开头</li>
+  <li>octal 八进制 以0开头</li></ul></li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-40" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-variable">$x</span> = <span class="hljs-number">5985</span>;<br>var_dump(<span class="hljs-variable">$x</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-41" class="wmd-preview-section preview-content">
+
+<h4 id="php-float">PHP Float</h4>
+
+<blockquote>
+  <p>Float是指包含小数点的数</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-42" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-variable">$x</span> = <span class="hljs-number">10.365</span>;<br>var_dump(<span class="hljs-variable">$x</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-43" class="wmd-preview-section preview-content">
+
+<h4 id="php-boolean">PHP Boolean</h4>
+
+<blockquote>
+  <p>Boolean 只有两个值: <code>true</code> 或者 <code>false</code></p>
+</blockquote>
+
+</div><div id="wmd-preview-section-44" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs bash"><span class="hljs-variable">$x</span> = <span class="hljs-literal">true</span>;<br><span class="hljs-variable">$y</span> = <span class="hljs-literal">false</span>;<br></code></pre>
+
+</div><div id="wmd-preview-section-45" class="wmd-preview-section preview-content">
+
+<h4 id="php-array">PHP Array</h4>
+
+<blockquote>
+  <p>Array是用来存储数据的数据结构, 可以把多个数据存在一个variable中</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-46" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-variable">$cars</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">"Volvo"</span>,<span class="hljs-string">"BMW"</span>,<span class="hljs-string">"Toyota"</span>);<br>var_dump(<span class="hljs-variable">$cars</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-47" class="wmd-preview-section preview-content">
+
+<h5 id="php-indexed-arrays">PHP Indexed Arrays</h5>
+
+<blockquote>
+  <p>Indexed Arrays的index是自动生成的(从0开始) <br>
+  开发者可以用index来调用相应的值 <br>
+  用<code>count()</code>来返回array的长度</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-48" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$cars</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">"Volvo"</span>, <span class="hljs-string">"BMW"</span>, <span class="hljs-string">"Toyota"</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"I like "</span> . <span class="hljs-variable">$cars</span>[<span class="hljs-number">0</span>] . <span class="hljs-string">", "</span> . <span class="hljs-variable">$cars</span>[<span class="hljs-number">1</span>] . <span class="hljs-string">" and "</span> . <span class="hljs-variable">$cars</span>[<span class="hljs-number">2</span>] . <span class="hljs-string">"."</span>;<br><span class="hljs-keyword">echo</span> count(<span class="hljs-variable">$cars</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-49" class="wmd-preview-section preview-content">
+
+<h5 id="php-associative-arrays">PHP Associative Arrays</h5>
+
+<blockquote>
+  <p>Associative Arrays中的key是开发者命名的, 没有index, key与value是一一对应的 <br>
+  可以看做是JAVA中的Hashmap</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-50" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$age</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">"Peter"</span>=&gt;<span class="hljs-string">"35"</span>, <span class="hljs-string">"Ben"</span>=&gt;<span class="hljs-string">"37"</span>, <span class="hljs-string">"Joe"</span>=&gt;<span class="hljs-string">"43"</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Peter is "</span> . <span class="hljs-variable">$age</span>[<span class="hljs-string">'Peter'</span>] . <span class="hljs-string">" years old."</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-51" class="wmd-preview-section preview-content">
+
+<h5 id="php-multidimensional-arrays">PHP Multidimensional Arrays</h5>
+
+<blockquote>
+  <p>Multidimensional Arrays是指一个Array中嵌套一个Array</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-52" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown">$cars = array<br>  (<br>  array("Volvo",22,18),<br>  array("BMW",15,13),<br>  array("Saab",5,2),<br>  array("Land Rover",17,15)<br>  );<br><span class="xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$cars</span>[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>].<span class="hljs-string">": In stock: "</span>.<span class="hljs-variable">$cars</span>[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>].<span class="hljs-string">", sold: "</span>.<span class="hljs-variable">$cars</span>[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>].<span class="hljs-string">".&lt;br&gt;</span></span></span>";<br>echo $cars[<span class="hljs-link_label">1</span>][<span class="hljs-link_reference">0</span>].": In stock: ".$cars[<span class="hljs-link_label">1</span>][<span class="hljs-link_reference">1</span>].", sold: ".$cars[<span class="hljs-link_label">1</span>][<span class="hljs-link_reference">2</span>].".<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span></span>";<br>echo $cars[<span class="hljs-link_label">2</span>][<span class="hljs-link_reference">0</span>].": In stock: ".$cars[<span class="hljs-link_label">2</span>][<span class="hljs-link_reference">1</span>].", sold: ".$cars[<span class="hljs-link_label">2</span>][<span class="hljs-link_reference">2</span>].".<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span></span>";<br>echo $cars[<span class="hljs-link_label">3</span>][<span class="hljs-link_reference">0</span>].": In stock: ".$cars[<span class="hljs-link_label">3</span>][<span class="hljs-link_reference">1</span>].", sold: ".$cars[<span class="hljs-link_label">3</span>][<span class="hljs-link_reference">2</span>].".<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span></span>";<br>?&gt;<br><br><span class="xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">for</span> (<span class="hljs-variable">$row</span> = <span class="hljs-number">0</span>; <span class="hljs-variable">$row</span> &lt; <span class="hljs-number">4</span>; <span class="hljs-variable">$row</span>++) {<br>  <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;p&gt;</span></span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">b</span>&gt;</span></span>Row number $row<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></span>";<br>  echo "<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span></span>";<br>  for ($col = 0; $col <span class="xml"><span class="hljs-tag">&lt; <span class="hljs-attribute">3</span>; $<span class="hljs-attribute">col</span>++) {<br>    <span class="hljs-attribute">echo</span> "&lt;<span class="hljs-attribute">li</span>&gt;</span></span>".$cars[<span class="hljs-link_label">$row</span>][<span class="hljs-link_reference">$col</span>]."<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span></span>";<br>  }<br>  echo "<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span></span>";<br>}<br>?&gt;<br></code></pre>
+
+</div><div id="wmd-preview-section-53" class="wmd-preview-section preview-content">
+
+<h4 id="php-object">PHP Object</h4>
+
+<blockquote>
+  <p>Object是一种独特的数据结构, 它可以用来存储数据和处理数据 <br>
+  Object必须要被先明确的申明后才能用, 一般性开发者用关键字class来定义一类Object, 然后再用这类Object来创建一个特定的Object</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-54" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{<br>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Car</span><span class="hljs-params">()</span> </span>{<br>        <span class="hljs-variable">$this</span>-&gt;model = <span class="hljs-string">"VW"</span>;<br>    }<br>}<br><br><span class="hljs-comment">// create an object</span><br><span class="hljs-variable">$herbie</span> = <span class="hljs-keyword">new</span> Car();<br><br><span class="hljs-comment">// show object properties</span><br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$herbie</span>-&gt;model;<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-55" class="wmd-preview-section preview-content">
+
+<h4 id="php-null-value">PHP NULL Value</h4>
+
+<blockquote>
+  <p>Null在PHP中是一个特殊的类型, 只有一个值是NULL, 代表的意思是: 这个variable没有任何的值 <br>
+  如果一个variable被申明, 但是没有赋值, 那么会被自动赋值为<code>null</code></p>
+</blockquote>
+
+</div><div id="wmd-preview-section-56" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$x</span> = <span class="hljs-string">"Hello world!"</span>;<br><span class="hljs-variable">$x</span> = <span class="hljs-keyword">null</span>;<br>var_dump(<span class="hljs-variable">$x</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-57" class="wmd-preview-section preview-content">
+
+<h3 id="php5-constants">PHP5 Constants</h3>
+
+<blockquote>
+  <p>PHP中有一些variable一旦被定义了, 它就不可以被修改, 这类variable被称作constant <br>
+  contant name开头是一个字母或者下划线(没有$), 而且它默认是global的, 哪怕在function外部定义, 在function内部也可以调用</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-58" class="wmd-preview-section preview-content">
+
+<h4 id="syntax-1">Syntax</h4>
+
+</div><div id="wmd-preview-section-59" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs lasso"><span class="hljs-class"><span class="hljs-keyword">define</span></span>(name, value, <span class="hljs-keyword">case</span><span class="hljs-attribute">-insensitive</span>)<br></code></pre>
+
+<blockquote>
+  <p>Constant可以选择是<strong>case-insensitive</strong>与否, 默认是false, 也就是说默认区分大小写.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-60" class="wmd-preview-section preview-content">
+
+<h3 id="php-5-operators">PHP 5 Operators</h3>
+
+</div><div id="wmd-preview-section-61" class="wmd-preview-section preview-content">
+
+<h4 id="php-arithmetic-operatiors">PHP Arithmetic Operatiors</h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+  <th align="center">Name</th>
+  <th align="center">Example</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">+</td>
+  <td align="center">加</td>
+  <td align="center"><code>$x + $y</code></td>
+</tr>
+<tr>
+  <td align="center">-</td>
+  <td align="center">减</td>
+  <td align="center"><code>$x - $y</code></td>
+</tr>
+<tr>
+  <td align="center">*</td>
+  <td align="center">乘</td>
+  <td align="center"><code>$x * $y</code></td>
+</tr>
+<tr>
+  <td align="center">/</td>
+  <td align="center">除</td>
+  <td align="center"><code>$x / $y</code></td>
+</tr>
+<tr>
+  <td align="center">%</td>
+  <td align="center">余数</td>
+  <td align="center"><code>$x % $y</code></td>
+</tr>
+<tr>
+  <td align="center">**</td>
+  <td align="center">指数</td>
+  <td align="center"><code>$x ** $y</code></td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-62" class="wmd-preview-section preview-content">
+
+<h4 id="php-assignment-operatiors">PHP Assignment Operatiors</h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Assignment</th>
+  <th align="center">Same As</th>
+  <th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><code>x = y</code></td>
+  <td align="center"><code>x = y</code></td>
+  <td align="center">把右边variable的值赋给左边的variable</td>
+</tr>
+<tr>
+  <td align="center"><code>x += y</code></td>
+  <td align="center"><code>x = x + y</code></td>
+  <td align="center">加</td>
+</tr>
+<tr>
+  <td align="center"><code>x -= y</code></td>
+  <td align="center"><code>x = x - y</code></td>
+  <td align="center">减</td>
+</tr>
+<tr>
+  <td align="center"><code>x *= y</code></td>
+  <td align="center"><code>x = x * y</code></td>
+  <td align="center">乘</td>
+</tr>
+<tr>
+  <td align="center"><code>x /= y</code></td>
+  <td align="center"><code>x = x / y</code></td>
+  <td align="center">除</td>
+</tr>
+<tr>
+  <td align="center"><code>x %= y</code></td>
+  <td align="center"><code>x = x % y</code></td>
+  <td align="center">余数</td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-63" class="wmd-preview-section preview-content">
+
+<h4 id="php-comparison-operators">PHP Comparison Operators</h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+  <th align="center">Name</th>
+  <th align="center">Example</th>
+  <th align="center">Result</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">==</td>
+  <td align="center">Equal</td>
+  <td align="center"><code>$x == $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>的值相同, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">===</td>
+  <td align="center">Identical</td>
+  <td align="center"><code>$x === $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>的值相同, 同时他们的类型也相同, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">!=</td>
+  <td align="center">Not Equal</td>
+  <td align="center"><code>$x != $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>的值不相同, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">&lt;&gt;</td>
+  <td align="center">Not Equal</td>
+  <td align="center"><code>$x &lt;&gt; $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>的值不相同, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">!==</td>
+  <td align="center">Not Identical</td>
+  <td align="center"><code>$x !== $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>的值不相同或者他们的类型不同, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">&gt;</td>
+  <td align="center">Greater than</td>
+  <td align="center"><code>$x &gt; $y</code></td>
+  <td align="center">如果<code>$x</code>比<code>$y</code>的值大, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">&lt;</td>
+  <td align="center">Less than</td>
+  <td align="center"><code>$x &lt; $y</code></td>
+  <td align="center">如果<code>$x</code>比<code>$y</code>的值小, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">
+  =
+</td>
+  <td align="center">Greater than or equal to</td>
+  <td align="center"><code>$x &gt;=$y</code></td>
+  <td align="center">如果<code>$x</code>大于等于<code>$y</code>的值, 则返回true</td>
+</tr>
+<tr>
+  <td align="center">&lt;=</td>
+  <td align="center">Less than or equal to</td>
+  <td align="center"><code>$x &lt;= $y</code></td>
+  <td align="center">如果<code>$x</code>小于等于<code>$y</code>的值相同, 则返回true</td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-64" class="wmd-preview-section preview-content">
+
+<h4 id="php-increment-decrement-operators">PHP Increment / Decrement Operators</h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+  <th align="center">Name</th>
+  <th align="center">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center"><code>++$x</code></td>
+  <td align="center">Pre-increment</td>
+  <td align="center"><code>$x</code>先加一, 然后返回<code>$x</code></td>
+</tr>
+<tr>
+  <td align="center"><code>$x++</code></td>
+  <td align="center">Post-increment</td>
+  <td align="center"><code>$x</code>返回值, 然后加一</td>
+</tr>
+<tr>
+  <td align="center"><code>--$x</code></td>
+  <td align="center">Pre-decrement</td>
+  <td align="center"><code>$x</code>先减一, 然后返回<code>$x</code></td>
+</tr>
+<tr>
+  <td align="center"><code>$x--</code></td>
+  <td align="center">Post-decrement</td>
+  <td align="center"><code>$x</code>返回值, 然后减一</td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-65" class="wmd-preview-section preview-content">
+
+<h4 id="php-logical-operators">PHP Logical Operators</h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+  <th align="center">Name</th>
+  <th align="center">Example</th>
+  <th align="center">Result</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">and</td>
+  <td align="center">And</td>
+  <td align="center"><code>$x and $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>都是true 则返回true</td>
+</tr>
+<tr>
+  <td align="center">or</td>
+  <td align="center">Or</td>
+  <td align="center"><code>$x or $y</code></td>
+  <td align="center">如果<code>$x</code>或<code>$y</code>是true 则返回true</td>
+</tr>
+<tr>
+  <td align="center">xor</td>
+  <td align="center">Xor</td>
+  <td align="center"><code>$x xor $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>有且只有一个是true 则返回true</td>
+</tr>
+<tr>
+  <td align="center">&amp;&amp;</td>
+  <td align="center">And</td>
+  <td align="center"><code>$x &amp;&amp; $y</code></td>
+  <td align="center">如果<code>$x</code>与<code>$y</code>都是true 则返回true</td>
+</tr>
+<tr>
+  <td align="center">!</td>
+  <td align="center">Not</td>
+  <td align="center"><code>!$x</code></td>
+  <td align="center">如果<code>$x</code>不是true 则返回true</td>
+</tr>
+<tr>
+  <td align="center">`</td>
+  <td align="center">Or</td>
+  <td align="center"><code><span class="mathjax-replacement" rel="24f325dc45692943f7018b70c53d07d7">$x || $</span>y</code></td>
+  <td align="center">如果<code><span class="mathjax-replacement" rel="6c40aa8162bc36ebf02a5b22356cd209">$x`或`$</span>y</code>是true 则返回true</td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-66" class="wmd-preview-section preview-content">
+
+<h4 id="php-string-operators">PHP String Operators</h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+  <th align="center">Name</th>
+  <th align="center">Example</th>
+  <th align="center">Result</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">.</td>
+  <td align="center">Concatenation</td>
+  <td align="center"><code>$txt1.$txt2</code></td>
+  <td align="center">Concatenation of <code>$txt1</code> and <code>$txt2</code></td>
+</tr>
+<tr>
+  <td align="center">.=</td>
+  <td align="center">Concatenation assignment</td>
+  <td align="center"><code>$txt1 .= $txt2</code></td>
+  <td align="center">Appends <code>$txt2</code> to <code>$txt1</code></td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-67" class="wmd-preview-section preview-content">
+
+<h4 id="php-array-operators">PHP Array Operators</h4>
+
+<table>
+<thead>
+<tr>
+  <th align="center">Operator</th>
+  <th align="center">Name</th>
+  <th align="center">Example</th>
+  <th align="center">Result</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">+</td>
+  <td align="center">Union</td>
+  <td align="center"><code>$x + $y</code></td>
+  <td align="center">Union of <code>$x</code> and <code>$y</code></td>
+</tr>
+<tr>
+  <td align="center">==</td>
+  <td align="center">Equality</td>
+  <td align="center"><code>$x == $y</code></td>
+  <td align="center">如果 <code>$x</code> 和 <code>$y</code> 有相同的Key/Value对的话, 返回true</td>
+</tr>
+<tr>
+  <td align="center">===</td>
+  <td align="center">Identity</td>
+  <td align="center"><code>$x === $y</code></td>
+  <td align="center">如果 <code>$x</code> 和 <code>$y</code> 有相同的Key/Value对的话, 而且顺序和数据类型都一样, 返回true</td>
+</tr>
+<tr>
+  <td align="center">!=</td>
+  <td align="center">Inequality</td>
+  <td align="center"><code>$x != $y</code></td>
+  <td align="center">如果 <code>$x</code> 和 <code>$y</code> 不相同, 返回true</td>
+</tr>
+<tr>
+  <td align="center">&lt;&gt;</td>
+  <td align="center">Inequality</td>
+  <td align="center"><code>$x &lt;&gt; $y</code></td>
+  <td align="center">如果 <code>$x</code> 和 <code>$y</code> 不相同, 返回true</td>
+</tr>
+<tr>
+  <td align="center">!==</td>
+  <td align="center">Non-identity</td>
+  <td align="center"><code>$x !== $y</code></td>
+  <td align="center">Returns true if <code>$x</code> is not identical to <code>$y</code></td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-68" class="wmd-preview-section preview-content">
+
+<h3 id="php-conditional-statement">PHP Conditional Statement</h3>
+
+</div><div id="wmd-preview-section-69" class="wmd-preview-section preview-content">
+
+<h4 id="php-if-statement">PHP if Statement</h4>
+
+</div><div id="wmd-preview-section-70" class="wmd-preview-section preview-content">
+
+<h5 id="syntax-2">Syntax</h5>
+
+</div><div id="wmd-preview-section-71" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs vbscript"><span class="hljs-keyword">if</span> (condition) {<br>    code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>;<br>} <span class="hljs-keyword">elseif</span> (condition) {<br>    code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>;<br>} <span class="hljs-keyword">else</span> {<br>    code <span class="hljs-keyword">to</span> be executed <span class="hljs-keyword">if</span> condition <span class="hljs-keyword">is</span> <span class="hljs-literal">false</span>;<br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-72" class="wmd-preview-section preview-content">
+
+<h4 id="php-switch-statement">PHP Switch Statement</h4>
+
+<blockquote>
+  <p>switch Statement是if statement的简写形式 <br>
+  Switch会根据条件来选择进入哪个<code>case</code>, 然后运行到<code>break</code>后跳出statement, 如果都没有满足的条件, 则会运行<code>default</code></p>
+</blockquote>
+
+</div><div id="wmd-preview-section-73" class="wmd-preview-section preview-content">
+
+<h5 id="syntax-3">Syntax</h5>
+
+</div><div id="wmd-preview-section-74" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs r"><span class="hljs-keyword">switch</span> (n) {<br>    case label1:<br>        code to be executed <span class="hljs-keyword">if</span> n=label1;<br>        <span class="hljs-keyword">break</span>;<br>    case label2:<br>        code to be executed <span class="hljs-keyword">if</span> n=label2;<br>        <span class="hljs-keyword">break</span>;<br>    case label3:<br>        code to be executed <span class="hljs-keyword">if</span> n=label3;<br>        <span class="hljs-keyword">break</span>;<br>    <span class="hljs-keyword">...</span><br>    default:<br>        code to be executed <span class="hljs-keyword">if</span> n is different from all labels;<br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-75" class="wmd-preview-section preview-content">
+
+<h3 id="php-loop">PHP Loop</h3>
+
+</div><div id="wmd-preview-section-76" class="wmd-preview-section preview-content">
+
+<h4 id="php-while-loop">PHP while Loop</h4>
+
+<blockquote>
+  <p>while loop会先判定条件, 然后再执行循环, 所以while loop最少执行0次</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-77" class="wmd-preview-section preview-content">
+
+<h5 id="syntax-4">Syntax</h5>
+
+</div><div id="wmd-preview-section-78" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs applescript"><span class="hljs-keyword">while</span> (condition <span class="hljs-keyword">is</span> <span class="hljs-constant">true</span>) {<br>    code <span class="hljs-keyword">to</span> be executed;<br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-79" class="wmd-preview-section preview-content">
+
+<h4 id="php-dowhile-loop">PHP do…while Loop</h4>
+
+<blockquote>
+  <p>do…while loop会先执行循环, 然后再判定条件, 所以do…while loop最少执行1次</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-80" class="wmd-preview-section preview-content">
+
+<h5 id="syntax-5">Syntax</h5>
+
+</div><div id="wmd-preview-section-81" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs livescript"><span class="hljs-keyword">do</span> {<br>    code <span class="hljs-keyword">to</span> be executed;<br>} <span class="hljs-keyword">while</span> (condition <span class="hljs-keyword">is</span> <span class="hljs-literal">true</span>);<br></code></pre>
+
+</div><div id="wmd-preview-section-82" class="wmd-preview-section preview-content">
+
+<h4 id="php-for-loop">PHP for Loop</h4>
+
+<blockquote>
+  <p>for loop的条件判定是由三部分组成的</p>
+  
+  <ul><li>初始化: 初始化loop counter的值</li>
+  <li>判定: 判定是否满足循环的条件</li>
+  <li>结束句: 当运行完一次loop后对loop counter进行处理</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-83" class="wmd-preview-section preview-content">
+
+<h5 id="syntax-6">Syntax</h5>
+
+</div><div id="wmd-preview-section-84" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs nginx"><span class="hljs-title">for</span> (init counter; <span class="hljs-title">test</span> counter; <span class="hljs-title">increment</span> counter) {<br>    <span class="hljs-title">code</span> to be executed;<br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-85" class="wmd-preview-section preview-content">
+
+<h4 id="php-foreach-loop">PHP foreach Loop</h4>
+
+<blockquote>
+  <p>foreach loop是for loop的一种变化形式, 只对array适用. <br>
+  由于开发者时常需要遍历array里面的值, 所以开发者可以用foreach很形象化的去array里面把所有的值一一取出</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-86" class="wmd-preview-section preview-content">
+
+<h5 id="syntax-7">Syntax</h5>
+
+</div><div id="wmd-preview-section-87" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs nginx"><span class="hljs-title">foreach</span> (<span class="hljs-variable">$array</span> as <span class="hljs-variable">$value</span>) {<br>    <span class="hljs-title">code</span> to be executed;<br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-88" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-variable">$colors</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">"red"</span>, <span class="hljs-string">"green"</span>, <span class="hljs-string">"blue"</span>, <span class="hljs-string">"yellow"</span>); <br><br><span class="hljs-keyword">foreach</span> (<span class="hljs-variable">$colors</span> <span class="hljs-keyword">as</span> <span class="hljs-variable">$value</span>) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"$value &lt;br&gt;"</span>;<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-89" class="wmd-preview-section preview-content">
+
+<h3 id="php-function">PHP Function</h3>
+
+</div><div id="wmd-preview-section-90" class="wmd-preview-section preview-content">
+
+<h4 id="syntax-8">Syntax</h4>
+
+</div><div id="wmd-preview-section-91" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">functionName</span><span class="hljs-params">(<span class="hljs-variable">$arguments1</span>, <span class="hljs-variable">$arguments2</span>)</span> </span>{<br>    code to be executed;<br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-92" class="wmd-preview-section preview-content">
+
+<h4 id="php-default-argument-value">PHP Default Argument Value</h4>
+
+<blockquote>
+  <p>在PHP中如果调用函数的时候没有写argument的值, 开发者可以预先写入一个default argument来防止此类error发生</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-93" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setHeight</span><span class="hljs-params">(<span class="hljs-variable">$minheight</span> = <span class="hljs-number">50</span>)</span> </span>{<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"The height is : $minheight &lt;br&gt;"</span>;<br>}<br><br>setHeight(<span class="hljs-number">350</span>);<br>setHeight(); <span class="hljs-comment">// will use the default value of 50</span><br>setHeight(<span class="hljs-number">135</span>);<br>setHeight(<span class="hljs-number">80</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-94" class="wmd-preview-section preview-content">
+
+<h4 id="php-functions-returning-values">PHP Functions - Returning values</h4>
+
+</div><div id="wmd-preview-section-95" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-variable">$x</span>, <span class="hljs-variable">$y</span>)</span> </span>{<br>    <span class="hljs-variable">$z</span> = <span class="hljs-variable">$x</span> + <span class="hljs-variable">$y</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-variable">$z</span>;<br>}<br><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"5 + 10 = "</span> . sum(<span class="hljs-number">5</span>, <span class="hljs-number">10</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"7 + 13 = "</span> . sum(<span class="hljs-number">7</span>, <span class="hljs-number">13</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"2 + 4 = "</span> . sum(<span class="hljs-number">2</span>, <span class="hljs-number">4</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-96" class="wmd-preview-section preview-content">
+
+<h3 id="php5-sorting-arrays">PHP5 Sorting Arrays</h3>
+
+<blockquote>
+  <p>在PHP中, 有很多内置的函数用来给array进行排序</p>
+  
+  <ul><li><code>sort()</code> : sort arrays in ascending order</li>
+  <li><code>rsort()</code> : sort arrays in descending order</li>
+  <li><code>asort()</code> : sort associative arrays in ascending order, according to the value</li>
+  <li><code>ksort()</code> : sort associative arrays in ascending order, according to the key</li>
+  <li><code>arsort()</code> : sort associative arrays in descending order, according to the value</li>
+  <li><code>krsort()</code> : sort associative arrays in descending order, according to the key</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-97" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$age</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">"Peter"</span>=&gt;<span class="hljs-string">"35"</span>, <span class="hljs-string">"Ben"</span>=&gt;<span class="hljs-string">"37"</span>, <span class="hljs-string">"Joe"</span>=&gt;<span class="hljs-string">"43"</span>);<br>krsort(<span class="hljs-variable">$age</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-98" class="wmd-preview-section preview-content">
+
+<h3 id="php-global-variables-superglobals">PHP Global Variables - Superglobals</h3>
+
+<blockquote>
+  <p>PHP内置了很多Superglobals用来应对某些特殊情况和需求:</p>
+  
+  <ul><li><code>$GLOBALS</code></li>
+  <li><code>$_SERVER</code></li>
+  <li><code>$_REQUEST</code></li>
+  <li><code>$_POST</code></li>
+  <li><code>$_GET</code></li>
+  <li><code>$_FILES</code></li>
+  <li><code>$_ENV</code></li>
+  <li><code>$_COOKIE</code></li>
+  <li><code>$_SESSION</code></li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-99" class="wmd-preview-section preview-content">
+
+<h4 id="php-globals">PHP <code>$GLOBALS</code></h4>
+
+<blockquote>
+  <p>PHP会把所有的global variable都储存在一个叫<code>$GLOBALS[*index*]</code>的Array中, 其中的<code>index</code>就是variable name. 所以在function内部调用这个Array的话, 不但可以取到variable的值, 还可以对其进行修改</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-100" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-variable">$x</span> = <span class="hljs-number">75</span>; <br><span class="hljs-variable">$y</span> = <span class="hljs-number">25</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addition</span><span class="hljs-params">()</span> </span>{ <br>    <span class="hljs-variable">$GLOBALS</span>[<span class="hljs-string">'z'</span>] = <span class="hljs-variable">$GLOBALS</span>[<span class="hljs-string">'x'</span>] + <span class="hljs-variable">$GLOBALS</span>[<span class="hljs-string">'y'</span>]; <br>}<br><br>addition(); <br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$z</span>; <br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-101" class="wmd-preview-section preview-content">
+
+<h4 id="php-server">PHP <code>$_SERVER</code></h4>
+
+<blockquote>
+  <p>PHP在<code>$_SERVER</code>中存储了一些服务器的基本信息, 包括headers, paths 和 script locations.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-102" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'PHP_SELF'</span>];<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'SERVER_NAME'</span>];<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'HTTP_HOST'</span>];<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'HTTP_REFERER'</span>];<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'HTTP_USER_AGENT'</span>];<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'SCRIPT_NAME'</span>];<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-103" class="wmd-preview-section preview-content">
+
+<h4 id="php-request">PHP <code>$_REQUEST</code></h4>
+
+<blockquote>
+  <p>PHP中当用户提交了表单后,  <code>$_REQUEST</code>会收集表单的所有数据.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-104" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'PHP_SELF'</span>];<span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>  Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"fname"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {<br>    <span class="hljs-comment">// collect value of input field</span><br>    <span class="hljs-variable">$name</span> = <span class="hljs-variable">$_REQUEST</span>[<span class="hljs-string">'fname'</span>];<br>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$name</span>)) {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Name is empty"</span>;<br>    } <span class="hljs-keyword">else</span> {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-variable">$name</span>;<br>    }<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-105" class="wmd-preview-section preview-content">
+
+<h4 id="php-post">PHP <code>$_POST</code></h4>
+
+<blockquote>
+  <p>PHP中, <code>$_POST</code>用<code>method="post"</code>来收集HTML的表单</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-106" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'PHP_SELF'</span>];<span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>  Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"fname"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {<br>    <span class="hljs-comment">// collect value of input field</span><br>    <span class="hljs-variable">$name</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">'fname'</span>];<br>    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$name</span>)) {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Name is empty"</span>;<br>    } <span class="hljs-keyword">else</span> {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-variable">$name</span>;<br>    }<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-107" class="wmd-preview-section preview-content">
+
+<h4 id="php-get">PHP $_GET</h4>
+
+<blockquote>
+  <p>PHP中, <code>$GET</code>用<code>method="get"</code>来收集HTML的表单</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-108" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Study "</span> . <span class="hljs-variable">$_GET</span>[<span class="hljs-string">'subject'</span>] . <span class="hljs-string">" at "</span> . <span class="hljs-variable">$_GET</span>[<span class="hljs-string">'web'</span>];<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-109" class="wmd-preview-section preview-content">
+
+<h4 id="request-post-和-get的区别"><code>$_REQUEST</code>, <code>$_POST</code> 和 <code>$_GET</code>的区别</h4>
+
+<blockquote>
+  <ul><li><code>$_REQUEST[]</code>具用<code>$_POST[] $_GET[]</code>的功能，但是<code>$_REQUEST[]</code>比较慢。通过POST和GET方法提交的所有数据都可以通过<code>$_REQUEST</code>数组获得。</li>
+  <li>GET是从服务器上获取数据，POST是向服务器传送数据。</li>
+  <li>GET是把参数数据队列加到提交表单的ACTION属性所指的URL中，值和表单内各个字段一一对应，在URL中可以看到。POST是通过HTTP POST机制，将表单内各个字段与其内容放置在HTML HEADER内一起传送到ACTION属性所指的URL地址。用户看不到这个过程。</li>
+  <li>对于GET方式提交表单数据，服务器端用<code>$_GET[‘name’]</code>获取变量的值，对于POST方式提交表单数据，服务器端用<code>$_POST[‘name’]</code>获取提交的数据，当然，两者都可以通过<code>$_REQUEST[‘name’]</code>获得表单数据。对于REQUEST方式提交表单数据，服务器端用<code>$_REQUEST[‘name’]</code>获取变量的值，但这种方式很少用。</li>
+  <li>GET传送的数据量较小，不能大于2KB。POST传送的数据量较大，一般被默认为不受限制。但理论上，一般认为不能超过100KB。</li>
+  <li>GET安全性非常低，POST安全性较高。</li>
+  <li>GET表单值可以通过_GET获取；但通过action的url设置的参数总是获取不到的，<code>&lt;form method="get" action="a.asp?b=b"&gt;</code>跟<code>&lt;form method="get"action="a.asp"&gt;</code>是一样的，也就是说，在这种情况下，GET方式会忽略action页面后边带的参数列表。POST表单值可以通过_POST获取；但通过action的url参数设置的参数则可以不能通过_POST获取到。<code>action=test.php?id=1</code>这种就是GET方式传值，可以用<code>$_REQUEST</code>和<code>$_GET</code>接受传值，但不能用POST方式获取到值，即使表单是POST方式提交。所以，在提交表单时，如果action中同时有参数，最好只能通过POST表单方式，对于表单内数据，直接通过POST获取，对于action中参数，通过GET获取。</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-110" class="wmd-preview-section preview-content">
+
+<h3 id="php-form-handling">PHP Form Handling</h3>
+
+<blockquote>
+  <p>PHP中通常用<code>$_GET</code>和<code>$_POST</code>来收集用户从表单上提供的数据.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-111" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"welcome_get.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"get"</span>&gt;</span><br>Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>E-mail: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br><br>welcome_get.php<br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br>Welcome <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$_GET</span>[<span class="hljs-string">"name"</span>]; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>Your email address is: <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$_GET</span>[<span class="hljs-string">"email"</span>]; <span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-112" class="wmd-preview-section preview-content">
+
+<h3 id="php-5-form-validation">PHP 5 Form Validation</h3>
+
+<blockquote>
+  <p>由于PHP是于服务器沟通的语言, 所以当开发者构建了一个提交到服务器的表单给用户使用的时候, 用户输入的一些数据有可能会影响到服务器的使用, 会造成服务器崩溃或者丢失数据. <br>
+  所以Form Validation是很必要的</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-113" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs nimrod">&lt;form <span class="hljs-keyword">method</span>=<span class="hljs-string">"post"</span> action=<span class="hljs-string">"&lt;?php echo htmlspecialchars($_SERVER["</span><span class="hljs-string">PHP_SELF"]);?&gt;"</span>&gt;<br></code></pre>
+
+<blockquote>
+  <p><code>$_SERVER[PHP_SELF]</code>会返回当前执行的script的文件名, 所以<code>$_SERVER[PHP_SELF]</code>会把提交的表单数据返回给页面本身, 而不是跳转到别的页面. 所以用户的误输入或者黑客的蓄意攻击会导致页面的崩溃 <br>
+  <code>htmlspecialchars()</code>这个function是用来把一些特殊字符<code>&lt;,&gt;,/</code>转化成无害的字符<code>&amp;lt, &amp;gt</code>. 这样当用户或者黑客输入一些HTML或者Javascript的代码的时候, 服务器会把这些特殊字符转化成无意义的字符, 然后保存数据. 于是降低了被蓄意攻击的危险.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-114" class="wmd-preview-section preview-content">
+
+<h4 id="validate-form-data-with-php">Validate Form Data With PHP</h4>
+
+<blockquote>
+  <p>为了防止用户的误输入或者黑客的攻击导致页面崩溃, </p>
+  
+  <ul><li>首先, 开发者要先把所有用户输入的数据都经过<code>htmlspecialchars()</code>来把特殊字符转化成无意义的字符</li>
+  <li>其次, 开发者要删除用户输入的无意义字符(多余的空格, tab, 换行符), 可以使用<code>trim()</code></li>
+  <li>最后, 开发者要移除反斜杠符号<code>\</code>, 可以使用<code>stripslashes()</code></li>
+  </ul>
+  
+  <p>这是一个简单的用来测试用户输入的代码</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-115" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs bash">&lt;?php<br>// define variables and <span class="hljs-built_in">set</span> to empty values<br><span class="hljs-variable">$name</span> = <span class="hljs-variable">$email</span> = <span class="hljs-variable">$gender</span> = <span class="hljs-variable">$comment</span> = <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br><br><span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {<br>  <span class="hljs-variable">$name</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>]);<br>  <span class="hljs-variable">$email</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>]);<br>  <span class="hljs-variable">$website</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>]);<br>  <span class="hljs-variable">$comment</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>]);<br>  <span class="hljs-variable">$gender</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>]);<br>}<br><br><span class="hljs-keyword">function</span> <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$data</span>) {<br>  <span class="hljs-variable">$data</span> = trim(<span class="hljs-variable">$data</span>);<br>  <span class="hljs-variable">$data</span> = stripslashes(<span class="hljs-variable">$data</span>);<br>  <span class="hljs-variable">$data</span> = htmlspecialchars(<span class="hljs-variable">$data</span>);<br>  <span class="hljs-built_in">return</span> <span class="hljs-variable">$data</span>;<br>}<br>?&gt;<br></code></pre>
+
+</div><div id="wmd-preview-section-116" class="wmd-preview-section preview-content">
+
+<h3 id="php-forms-required-fields">PHP Forms - Required Fields</h3>
+
+<blockquote>
+  <p>对于表单来说, 有些数据是必须要输入的, 比如用户名, 邮箱, 甚至性别, 电话, 地址等等.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+  <th align="center">内容</th>
+  <th align="center">验证形式</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">Name</td>
+  <td align="center">必填, 必须包含字符</td>
+</tr>
+<tr>
+  <td align="center">E-mail</td>
+  <td align="center">必填, 必须包含有效地email地址(@和.)</td>
+</tr>
+<tr>
+  <td align="center">Website</td>
+  <td align="center">选填, 如果有, 则必须死有效地url地址</td>
+</tr>
+<tr>
+  <td align="center">Comment</td>
+  <td align="center">选填, 多行输入</td>
+</tr>
+<tr>
+  <td align="center">Gender</td>
+  <td align="center">必填, 只能单选</td>
+</tr>
+</tbody></table>
+
+
+</div><div id="wmd-preview-section-117" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// define variables and set to empty values</span><br><span class="hljs-variable">$nameErr</span> = <span class="hljs-variable">$emailErr</span> = <span class="hljs-variable">$genderErr</span> = <span class="hljs-variable">$websiteErr</span> = <span class="hljs-string">""</span>;<br><span class="hljs-variable">$name</span> = <span class="hljs-variable">$email</span> = <span class="hljs-variable">$gender</span> = <span class="hljs-variable">$comment</span> = <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br><br><span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {<br>  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>])) {<br>    <span class="hljs-variable">$nameErr</span> = <span class="hljs-string">"Name is required"</span>;<br>  } <span class="hljs-keyword">else</span> {<br>    <span class="hljs-variable">$name</span> = test_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>]);<br>  }<br><br>  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>])) {<br>    <span class="hljs-variable">$emailErr</span> = <span class="hljs-string">"Email is required"</span>;<br>  } <span class="hljs-keyword">else</span> {<br>    <span class="hljs-variable">$email</span> = test_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>]);<br>  }<br><br>  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>])) {<br>    <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br>  } <span class="hljs-keyword">else</span> {<br>    <span class="hljs-variable">$website</span> = test_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>]);<br>  }<br><br>  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>])) {<br>    <span class="hljs-variable">$comment</span> = <span class="hljs-string">""</span>;<br>  } <span class="hljs-keyword">else</span> {<br>    <span class="hljs-variable">$comment</span> = test_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>]);<br>  }<br><br>  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>])) {<br>    <span class="hljs-variable">$genderErr</span> = <span class="hljs-string">"Gender is required"</span>;<br>  } <span class="hljs-keyword">else</span> {<br>    <span class="hljs-variable">$gender</span> = test_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>]);<br>  }<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-118" class="wmd-preview-section preview-content">
+
+<h4 id="php-display-the-error-messages">PHP - Display The Error Messages</h4>
+
+</div><div id="wmd-preview-section-119" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> htmlspecialchars(<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"PHP_SELF"</span>]);<span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br><br>Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$nameErr</span>;<span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>E-mail:<br><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$emailErr</span>;<span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>Website:<br><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"website"</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$websiteErr</span>;<span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>Comment: <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"comment"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"5"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"40"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>Gender:<br><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"female"</span>&gt;</span>Female<br><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"male"</span>&gt;</span>Male<br><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$genderErr</span>;<span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Submit"</span>&gt;</span> <br><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-120" class="wmd-preview-section preview-content">
+
+<h4 id="完整代码">完整代码</h4>
+
+</div><div id="wmd-preview-section-121" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE HTML&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css"><br>        <span class="hljs-class">.error</span> <span class="hljs-rules">{<br>            <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#FF0000</span></span></span>;<br>        <span class="hljs-rule">}</span></span><br>    </span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>    <span class="hljs-comment">// define variables and set to empty values</span><br>    <span class="hljs-variable">$nameErr</span> = <span class="hljs-variable">$emailErr</span> = <span class="hljs-variable">$genderErr</span> = <span class="hljs-variable">$websiteErr</span> = <span class="hljs-string">""</span>;<br>    <span class="hljs-variable">$name</span> = <span class="hljs-variable">$email</span> = <span class="hljs-variable">$gender</span> = <span class="hljs-variable">$comment</span> = <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br><br>    <span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>])) {<br>            <span class="hljs-variable">$nameErr</span> = <span class="hljs-string">"Name is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$name</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>]);<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>])) {<br>            <span class="hljs-variable">$emailErr</span> = <span class="hljs-string">"Email is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$email</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>]);<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>])) {<br>            <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$website</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>]);<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>])) {<br>            <span class="hljs-variable">$comment</span> = <span class="hljs-string">""</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$comment</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>]);<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>])) {<br>            <span class="hljs-variable">$genderErr</span> = <span class="hljs-string">"Gender is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$gender</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>]);<br>        }<br>    }<br><br>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test_input</span> <span class="hljs-params">(<span class="hljs-variable">$data</span>)</span><br>    </span>{<br>        <span class="hljs-variable">$data</span> = trim (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-variable">$data</span> = stripslashes (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-variable">$data</span> = htmlspecialchars (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-variable">$data</span>;<br>    }<br><br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>PHP Form Validation Example<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* required field.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> htmlspecialchars (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"PHP_SELF"</span>]); <span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>    Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$nameErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    E-mail: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$emailErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Website: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"website"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$websiteErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Comment: <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"comment"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"5"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"40"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Gender:<br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"female"</span>&gt;</span>Female<br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"male"</span>&gt;</span>Male<br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$genderErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Submit"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;h2&gt;Your Input:&lt;/h2&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$name</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$email</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$website</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$comment</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$gender</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-122" class="wmd-preview-section preview-content">
+
+<h3 id="php-5-forms-validate-e-mail-and-url">PHP 5 Forms - Validate E-mail and URL</h3>
+
+<blockquote>
+  <p>在提交表单中, 验证邮箱和url的真实性是很重要的, 用户偶尔会因为误输入导致收不到很重要的信息, 这点是需要开发者来提醒用户输入的邮箱的正确性</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-123" class="wmd-preview-section preview-content">
+
+<h4 id="php-validate-name">PHP - Validate Name</h4>
+
+<blockquote>
+  <p>下面这段代码是用来验证用户输入的用户名只能包括字母和空格 <br>
+  <code>preg_match()</code> 搜索string中是否满足模板, 如果满足则返回true, 否则返回false. <br>
+  <code>/^[a-zA-Z ]*$/</code>是正则表达式, 意思是包含字符a-zA-Z和空格</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-124" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs bash"><span class="hljs-variable">$name</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>]);<br><span class="hljs-keyword">if</span> (!preg_match(<span class="hljs-string">"/^[a-zA-Z ]*$/"</span>,<span class="hljs-variable">$name</span>)) {<br>  <span class="hljs-variable">$nameErr</span> = <span class="hljs-string">"Only letters and white space allowed"</span>; <br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-125" class="wmd-preview-section preview-content">
+
+<h4 id="php-validate-e-mail">PHP - Validate E-mail</h4>
+
+<blockquote>
+  <p>在PHP中, 可以用<code>filter_var()</code>来代替正则表达式来验证Email地址是否正确.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-126" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs bash"><span class="hljs-variable">$email</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>]);<br><span class="hljs-keyword">if</span> (!filter_var(<span class="hljs-variable">$email</span>, FILTER_VALIDATE_EMAIL)) {<br>  <span class="hljs-variable">$emailErr</span> = <span class="hljs-string">"Invalid email format"</span>; <br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-127" class="wmd-preview-section preview-content">
+
+<h4 id="php-validate-url">PHP - Validate URL</h4>
+
+<blockquote>
+  <p>验证URL的话, 只能用正则表达式来完成</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-128" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs bash"><span class="hljs-variable">$website</span> = <span class="hljs-built_in">test</span>_input(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>]);<br><span class="hljs-keyword">if</span> (!preg_match(<span class="hljs-string">"/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&amp;@#\/%?=~_|!:,.;]*[-a-z0-9+&amp;@#\/%=~_|]/i"</span>,<span class="hljs-variable">$website</span>)) {<br>  <span class="hljs-variable">$websiteErr</span> = <span class="hljs-string">"Invalid URL"</span>; <br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-129" class="wmd-preview-section preview-content">
+
+<h4 id="完整代码-1">完整代码</h4>
+
+</div><div id="wmd-preview-section-130" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE HTML&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css"><br>        <span class="hljs-class">.error</span> <span class="hljs-rules">{<br>            <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#FF0000</span></span></span>;<br>        <span class="hljs-rule">}</span></span><br>    </span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>    <span class="hljs-comment">// define variables and set to empty values</span><br>    <span class="hljs-variable">$nameErr</span> = <span class="hljs-variable">$emailErr</span> = <span class="hljs-variable">$genderErr</span> = <span class="hljs-variable">$websiteErr</span> = <span class="hljs-string">""</span>;<br>    <span class="hljs-variable">$name</span> = <span class="hljs-variable">$email</span> = <span class="hljs-variable">$gender</span> = <span class="hljs-variable">$comment</span> = <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br><br>    <span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>])) {<br>            <span class="hljs-variable">$nameErr</span> = <span class="hljs-string">"Name is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$name</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>]);<br>            <span class="hljs-comment">// check if name only contains letters and whitespace</span><br>            <span class="hljs-keyword">if</span> (!preg_match (<span class="hljs-string">"/^[a-zA-Z ]*$/"</span>, <span class="hljs-variable">$name</span>)) {<br>                <span class="hljs-variable">$nameErr</span> = <span class="hljs-string">"Only letters and white space allowed"</span>;<br>            }<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>])) {<br>            <span class="hljs-variable">$emailErr</span> = <span class="hljs-string">"Email is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$email</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>]);<br>            <span class="hljs-comment">// check if e-mail address is well-formed</span><br>            <span class="hljs-keyword">if</span> (!filter_var (<span class="hljs-variable">$email</span>, FILTER_VALIDATE_EMAIL)) {<br>                <span class="hljs-variable">$emailErr</span> = <span class="hljs-string">"Invalid email format"</span>;<br>            }<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>])) {<br>            <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$website</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>]);<br>            <span class="hljs-comment">// check if URL address syntax is valid</span><br>            <span class="hljs-keyword">if</span> (!preg_match (<span class="hljs-string">"/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&amp;@#\/%?=~_|!:,.;]*[-a-z0-9+&amp;@#\/%=~_|]/i"</span>, <span class="hljs-variable">$website</span>)) {<br>                <span class="hljs-variable">$websiteErr</span> = <span class="hljs-string">"Invalid URL"</span>;<br>            }<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>])) {<br>            <span class="hljs-variable">$comment</span> = <span class="hljs-string">""</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$comment</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>]);<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>])) {<br>            <span class="hljs-variable">$genderErr</span> = <span class="hljs-string">"Gender is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$gender</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>]);<br>        }<br>    }<br><br>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test_input</span> <span class="hljs-params">(<span class="hljs-variable">$data</span>)</span><br>    </span>{<br>        <span class="hljs-variable">$data</span> = trim (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-variable">$data</span> = stripslashes (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-variable">$data</span> = htmlspecialchars (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-variable">$data</span>;<br>    }<br><br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>PHP Form Validation Example<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* required field.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> htmlspecialchars (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"PHP_SELF"</span>]); <span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>    Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$nameErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    E-mail: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$emailErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Website: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"website"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$websiteErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Comment: <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"comment"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"5"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"40"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Gender:<br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"female"</span>&gt;</span>Female<br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"male"</span>&gt;</span>Male<br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$genderErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Submit"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;h2&gt;Your Input:&lt;/h2&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$name</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$email</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$website</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$comment</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$gender</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-131" class="wmd-preview-section preview-content">
+
+<h3 id="php-keep-the-values-in-the-form">PHP - Keep The Values in The Form</h3>
+
+</div><div id="wmd-preview-section-132" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE HTML&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css"><br>        <span class="hljs-class">.error</span> <span class="hljs-rules">{<br>            <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#FF0000</span></span></span>;<br>        <span class="hljs-rule">}</span></span><br>    </span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>    <span class="hljs-comment">// define variables and set to empty values</span><br>    <span class="hljs-variable">$nameErr</span> = <span class="hljs-variable">$emailErr</span> = <span class="hljs-variable">$genderErr</span> = <span class="hljs-variable">$websiteErr</span> = <span class="hljs-string">""</span>;<br>    <span class="hljs-variable">$name</span> = <span class="hljs-variable">$email</span> = <span class="hljs-variable">$gender</span> = <span class="hljs-variable">$comment</span> = <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br><br>    <span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>])) {<br>            <span class="hljs-variable">$nameErr</span> = <span class="hljs-string">"Name is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$name</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>]);<br>            <span class="hljs-comment">// check if name only contains letters and whitespace</span><br>            <span class="hljs-keyword">if</span> (!preg_match (<span class="hljs-string">"/^[a-zA-Z ]*$/"</span>, <span class="hljs-variable">$name</span>)) {<br>                <span class="hljs-variable">$nameErr</span> = <span class="hljs-string">"Only letters and white space allowed"</span>;<br>            }<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>])) {<br>            <span class="hljs-variable">$emailErr</span> = <span class="hljs-string">"Email is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$email</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>]);<br>            <span class="hljs-comment">// check if e-mail address is well-formed</span><br>            <span class="hljs-keyword">if</span> (!filter_var (<span class="hljs-variable">$email</span>, FILTER_VALIDATE_EMAIL)) {<br>                <span class="hljs-variable">$emailErr</span> = <span class="hljs-string">"Invalid email format"</span>;<br>            }<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>])) {<br>            <span class="hljs-variable">$website</span> = <span class="hljs-string">""</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$website</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"website"</span>]);<br>            <span class="hljs-comment">// check if URL address syntax is valid (this regular expression also allows dashes in the URL)</span><br>            <span class="hljs-keyword">if</span> (!preg_match (<span class="hljs-string">"/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&amp;@#\/%?=~_|!:,.;]*[-a-z0-9+&amp;@#\/%=~_|]/i"</span>, <span class="hljs-variable">$website</span>)) {<br>                <span class="hljs-variable">$websiteErr</span> = <span class="hljs-string">"Invalid URL"</span>;<br>            }<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>])) {<br>            <span class="hljs-variable">$comment</span> = <span class="hljs-string">""</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$comment</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"comment"</span>]);<br>        }<br><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">empty</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>])) {<br>            <span class="hljs-variable">$genderErr</span> = <span class="hljs-string">"Gender is required"</span>;<br>        } <span class="hljs-keyword">else</span> {<br>            <span class="hljs-variable">$gender</span> = test_input (<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"gender"</span>]);<br>        }<br>    }<br><br>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test_input</span> <span class="hljs-params">(<span class="hljs-variable">$data</span>)</span><br>    </span>{<br>        <span class="hljs-variable">$data</span> = trim (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-variable">$data</span> = stripslashes (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-variable">$data</span> = htmlspecialchars (<span class="hljs-variable">$data</span>);<br>        <span class="hljs-keyword">return</span> <span class="hljs-variable">$data</span>;<br>    }<br><br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>PHP Form Validation Example<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* required field.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> htmlspecialchars (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"PHP_SELF"</span>]); <span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>    Name: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$name</span>; <span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$nameErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    E-mail: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$email</span>; <span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$emailErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Website: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"website"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"<span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$website</span>; <span class="hljs-preprocessor">?&gt;</span></span>"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$websiteErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Comment: <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"comment"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"5"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"40"</span>&gt;</span><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$comment</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    Gender:<br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$gender</span>) &amp;&amp; <span class="hljs-variable">$gender</span> == <span class="hljs-string">"female"</span>) <span class="hljs-keyword">echo</span> <span class="hljs-string">"checked"</span>; <span class="hljs-preprocessor">?&gt;</span></span><br>           <span class="hljs-attribute">value</span>=<span class="hljs-value">"female"</span>&gt;</span>Female<br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"gender"</span> <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$gender</span>) &amp;&amp; <span class="hljs-variable">$gender</span> == <span class="hljs-string">"male"</span>) <span class="hljs-keyword">echo</span> <span class="hljs-string">"checked"</span>; <span class="hljs-preprocessor">?&gt;</span></span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"male"</span>&gt;</span>Male<br>    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>* <span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">echo</span> <span class="hljs-variable">$genderErr</span>; <span class="hljs-preprocessor">?&gt;</span></span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Submit"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;h2&gt;Your Input:&lt;/h2&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$name</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$email</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$website</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$comment</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-variable">$gender</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-133" class="wmd-preview-section preview-content">
+
+<h3 id="php5-data-and-time">PHP5 Data and Time</h3>
+
+</div><div id="wmd-preview-section-134" class="wmd-preview-section preview-content">
+
+<h4 id="the-php-date-function">The PHP <code>Date()</code> Function</h4>
+
+</div><div id="wmd-preview-section-135" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">date</span><span class="hljs-params">(format,timestamp)</span></span><br></code></pre>
+
+<blockquote>
+  <p>format: 必须得, 声明了时间戳的格式 <br>
+  timestamp: 可选的, 声明要显示的时间戳, 默认是当前时间和日期</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-136" class="wmd-preview-section preview-content">
+
+<h4 id="get-a-simple-date">Get a Simple Date</h4>
+
+<blockquote>
+  <p>Data的format有很多:</p>
+  
+  <ul><li>d : 代表了日期 (01 ~ 31)</li>
+  <li>m: 代表了月份 (01 ~ 12)</li>
+  <li>Y: 代表年份 (2015)</li>
+  <li>l: 代表周几</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-137" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Today is "</span> . date(<span class="hljs-string">"Y/m/d"</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Today is "</span> . date(<span class="hljs-string">"Y.m.d"</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Today is "</span> . date(<span class="hljs-string">"Y-m-d"</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Today is "</span> . date(<span class="hljs-string">"l"</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-138" class="wmd-preview-section preview-content">
+
+<h4 id="get-a-simple-time">Get a Simple Time</h4>
+
+<blockquote>
+  <p>Time的format:</p>
+  
+  <ul><li>h: 12小时格式(01~12)</li>
+  <li>i: 表示分钟(00~59)</li>
+  <li>s: 表示秒数(00~59)</li>
+  <li>a: 表示上午还是下午(am 或者 pm)</li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-139" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"The time is "</span> . date(<span class="hljs-string">"h:i:sa"</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-140" class="wmd-preview-section preview-content">
+
+<h4 id="get-your-time-zone">Get Your Time Zone</h4>
+
+<blockquote>
+  <p>如果开发者的服务器是别的国家的话, 那么开发者需要修改一下默认时区</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-141" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>date_default_timezone_set(<span class="hljs-string">"America/New_York"</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"The time is "</span> . date(<span class="hljs-string">"h:i:sa"</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-142" class="wmd-preview-section preview-content">
+
+<h4 id="create-a-date-with-php-mktime">Create a Date With PHP <code>mktime()</code></h4>
+
+<blockquote>
+  <p>开发者可以用<code>mktime()</code>这个function来生成一个timestamp</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-143" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs processing">mktime(<span class="hljs-built_in">hour</span>,<span class="hljs-built_in">minute</span>,<span class="hljs-built_in">second</span>,<span class="hljs-built_in">month</span>,<span class="hljs-built_in">day</span>,<span class="hljs-built_in">year</span>)<br></code></pre>
+
+</div><div id="wmd-preview-section-144" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$d</span>=mktime(<span class="hljs-number">11</span>, <span class="hljs-number">14</span>, <span class="hljs-number">54</span>, <span class="hljs-number">8</span>, <span class="hljs-number">12</span>, <span class="hljs-number">2014</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Created date is "</span> . date(<span class="hljs-string">"Y-m-d h:i:sa"</span>, <span class="hljs-variable">$d</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-145" class="wmd-preview-section preview-content">
+
+<h4 id="create-a-date-from-a-string-with-php-strtotime">Create a Date From a String With PHP <code>strtotime()</code></h4>
+
+<blockquote>
+  <p><code>strtotime()</code>可以把用户可读的string转化成时间</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-146" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">strtotime</span><span class="hljs-params">(time,now)</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-1922" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$d</span>=strtotime(<span class="hljs-string">"10:30pm April 15 2014"</span>);<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Created date is "</span> . date(<span class="hljs-string">"Y-m-d h:i:sa"</span>, <span class="hljs-variable">$d</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-32291" class="wmd-preview-section preview-content">
+
+<h3 id="php5-include-files">PHP5 Include Files</h3>
+
+<blockquote>
+  <p>对于那些已经在别的文件中有的代码, 开发者可以用<code>include</code>或者<code>require</code>来调用它们.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-32292" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs ruby"><span class="hljs-keyword">include</span> <span class="hljs-string">'filename'</span>;<br><br><span class="hljs-keyword">or</span><br><br><span class="hljs-keyword">require</span> <span class="hljs-string">'filename'</span>;<br></code></pre>
+
+</div><div id="wmd-preview-section-32743" class="wmd-preview-section preview-content">
+
+<h4 id="php-include与require的区别">PHP <code>include</code>与<code>require</code>的区别</h4>
+
+<blockquote>
+  <p><code>include</code>与<code>require</code>都是用来加在外部文件的方法, 区别在于:</p>
+  
+  <ul><li>如果加在失败: <br>
+  <ul>
+  <li><code>include</code>会产生一个warning, 但是脚本会继续执行</li>
+  <li><code>warning</code>会爆出一个fatal error, 而脚本会停止执行</li>
+  <li>可以使用<code>require_once()</code>和<code>include_once()</code>检测文件是否重复包含</li></ul></li>
+  <li>对于PHP的性能来说: <br>
+  <ul>
+  <li><code>include</code>执行文件的时候, 每次都需要进行读取和评估</li>
+  <li><code>require</code>对于文件只处理一次</li>
+  <li>所以对于需要多次执行一段代码, 使用<code>require</code>的效率比较高.</li>
+  <li>而如果每次执行代码的文件不同, 或者需要对一个文件的代码进行叠代的循环, 就要使用<code>include</code></li></ul></li>
+  <li>使用方式也不同: <br>
+  <ul>
+  <li>对于<code>require</code>来说, 一般性是放在PHP 文件的最前面, 执行的时候就会先读入<code>require</code>所指定的文件, 变成PHP程序的一部分</li>
+  <li>对于<code>include</code>来说, 一般是放在流程控制的处理区段中, PHP在执行到<code>include</code>的时候, 才将其文件读出来, 这样可以使流程简单化.</li></ul></li>
+  </ul>
+</blockquote>
+
+</div><div id="wmd-preview-section-33197" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Welcome to my home page!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">include</span> <span class="hljs-string">'noFileExists.php'</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"I have a $color $car."</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-34110" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Welcome to my home page!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span> <span class="hljs-keyword">require</span> <span class="hljs-string">'noFileExists.php'</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"I have a $color $car."</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-39466" class="wmd-preview-section preview-content">
+
+<h3 id="php-5-file-handling">PHP 5 File Handling</h3>
+
+<blockquote>
+  <p>对于网站来说, 开发者会要求用户上传文档, 那么对于文档的处理和修改就是很重要的了. <br>
+  然而开发者在处理文档的时候要很小心, 因为一个小的错误就会造成很大的损失. 常见的错误有: 修改错误的文档, 添加过多的垃圾, 误删一些内容</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-43471" class="wmd-preview-section preview-content">
+
+<h4 id="php-readfile-function">PHP <code>readfile()</code> Function</h4>
+
+<blockquote>
+  <p><code>readfile()</code>用来读取一个文件, 同时把内容输出到buffer.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-43782" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> readfile(<span class="hljs-string">"webdictionary.txt"</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-65272" class="wmd-preview-section preview-content">
+
+<h3 id="php-open-file-fopen">PHP Open File - <code>fopen()</code></h3>
+
+<blockquote>
+  <p><code>fopen()</code>包含两个参数, 第一个是要打开文件的名字, 第二个是以什么方式打开</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+  <th align="center">打开方式</th>
+  <th align="center">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="center">r</td>
+  <td align="center">打开一个文件, 同时只读, 指针在文件的开头</td>
+</tr>
+<tr>
+  <td align="center">w</td>
+  <td align="center">打开一个文件, 同时只可以写, 擦除文件的所有内容或者创建一个空的文件, 指针在文件的开头</td>
+</tr>
+<tr>
+  <td align="center">a</td>
+  <td align="center">打开一个文件, 同时只可以写, 如果文件存在, 那么不会擦除所有内容, 只会在文件最后开始写入, 如果文件不存在, 就会创建一个新文件</td>
+</tr>
+<tr>
+  <td align="center">x</td>
+  <td align="center">新建一个文件, 同时只可以写. 如果文件已经存在则会返回False和error</td>
+</tr>
+<tr>
+  <td align="center">r+</td>
+  <td align="center">打开一个文件, 只读可写. 指针在文件的开头</td>
+</tr>
+<tr>
+  <td align="center">w+</td>
+  <td align="center">打开一个文件, 只读可写. 擦除文件的所有内容或者创建一个空的文件, 指针在文件的开头</td>
+</tr>
+<tr>
+  <td align="center">a+</td>
+  <td align="center">打开一个文件, 只读可写. 如果文件存在, 那么不会擦除所有内容, 只会在文件最后开始写入, 如果文件不存在, 就会创建一个新文件</td>
+</tr>
+<tr>
+  <td align="center">x+</td>
+  <td align="center">新建一个文件, 只读可写. 如果文件已经存在则会返回False和error</td>
+</tr>
+</tbody></table>
+</div><div id="wmd-preview-section-65744" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$myfile</span> = fopen(<span class="hljs-string">"webdictionary.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);<br><span class="hljs-keyword">echo</span> fread(<span class="hljs-variable">$myfile</span>,filesize(<span class="hljs-string">"webdictionary.txt"</span>));<br>fclose(<span class="hljs-variable">$myfile</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-70643" class="wmd-preview-section preview-content">
+
+<h4 id="php-read-file-fread">PHP Read File - <code>fread()</code></h4>
+
+<blockquote>
+  <p><code>fread()</code>可以读取已经打开的文件内容 <br>
+  <code>fread()</code>有两个参数, 第一个是要读的文件名, 第二个是最大读取的字节数</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-70962" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs mel"><span class="hljs-keyword">fread</span>(<span class="hljs-variable">$myfile</span>,filesize(<span class="hljs-string">"webdictionary.txt"</span>));<br></code></pre>
+
+</div><div id="wmd-preview-section-77045" class="wmd-preview-section preview-content">
+
+<h4 id="php-close-file-fclose">PHP Close File - <code>fclose()</code></h4>
+
+<blockquote>
+  <p><code>fclose()</code>用来关闭一个已经打开的文件, 只包含一个参数 <br>
+  对于网页编程来说, <code>fclose()</code>是很重要的, 每次处理完一个文件后关闭它可以减少服务器的负担</p>
+</blockquote></div><div id="wmd-preview-section-77368" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$myfile</span> = fopen(<span class="hljs-string">"webdictionary.txt"</span>, <span class="hljs-string">"r"</span>);<br><span class="hljs-comment">// some code to be executed....</span><br>fclose(<span class="hljs-variable">$myfile</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-81581" class="wmd-preview-section preview-content">
+
+<h4 id="php-read-single-line-fgets">PHP Read Single Line - <code>fgets()</code></h4>
+
+<blockquote>
+  <p><code>fgets()</code>可以用来读文件中的一行内容 <br>
+  当<code>fgets()</code>完成后, 指针会移动到下一行</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-85658" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$myfile</span> = fopen(<span class="hljs-string">"webdictionary.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);<br><span class="hljs-keyword">echo</span> fgets(<span class="hljs-variable">$myfile</span>);<br>fclose(<span class="hljs-variable">$myfile</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-89103" class="wmd-preview-section preview-content">
+
+<h4 id="php-check-end-of-file-feof">PHP Check End-Of-File - feof()</h4>
+
+<blockquote>
+  <p><code>feof()</code>可以用来检查是否到文档的最后. <br>
+  这在遍历一个长度不确定的文档是很有用的.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-89435" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$myfile</span> = fopen(<span class="hljs-string">"webdictionary.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);<br><span class="hljs-comment">// Output one line until end-of-file</span><br><span class="hljs-keyword">while</span>(!feof(<span class="hljs-variable">$myfile</span>)) {<br>  <span class="hljs-keyword">echo</span> fgets(<span class="hljs-variable">$myfile</span>) . <span class="hljs-string">"&lt;br&gt;"</span>;<br>}<br>fclose(<span class="hljs-variable">$myfile</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-91429" class="wmd-preview-section preview-content">
+
+<h4 id="php-read-single-character-fgetc">PHP Read Single Character - <code>fgetc()</code></h4>
+
+<blockquote>
+  <p><code>fgetc()</code>用来读文件的一个字节</p>
+</blockquote></div><div id="wmd-preview-section-92099" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$myfile</span> = fopen(<span class="hljs-string">"webdictionary.txt"</span>, <span class="hljs-string">"r"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);<br><span class="hljs-comment">// Output one character until end-of-file</span><br><span class="hljs-keyword">while</span>(!feof(<span class="hljs-variable">$myfile</span>)) {<br>  <span class="hljs-keyword">echo</span> fgetc(<span class="hljs-variable">$myfile</span>);<br>}<br>fclose(<span class="hljs-variable">$myfile</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre></div><div id="wmd-preview-section-104736" class="wmd-preview-section preview-content">
+
+<h4 id="php-write-to-file-fwrite">PHP Write to File - <code>fwrite()</code></h4>
+
+<blockquote>
+  <p>当一个文件已经被打开, 同时可写的时候, 开发者可以使用<code>fwrite()</code> 往文件里面写内容 <br>
+  <code>fwrite()</code>包含两个参数: 第一个是写入的文档名字, 第二个是写入的内容 <br>
+  开发者要注意的是, <code>fopen()</code>里面定义了文件打开的方式, 包括了是擦除所有内容后重写还是在原有内容的结尾继续写. 而<code>fwrite()</code>则只负责按照之前的打开方式写入内容</p>
+</blockquote></div><div id="wmd-preview-section-105075" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$myfile</span> = fopen(<span class="hljs-string">"newfile.txt"</span>, <span class="hljs-string">"w"</span>) <span class="hljs-keyword">or</span> <span class="hljs-keyword">die</span>(<span class="hljs-string">"Unable to open file!"</span>);<br><span class="hljs-variable">$txt</span> = <span class="hljs-string">"John Doe\n"</span>;<br>fwrite(<span class="hljs-variable">$myfile</span>, <span class="hljs-variable">$txt</span>);<br><span class="hljs-variable">$txt</span> = <span class="hljs-string">"Jane Doe\n"</span>;<br>fwrite(<span class="hljs-variable">$myfile</span>, <span class="hljs-variable">$txt</span>);<br>fclose(<span class="hljs-variable">$myfile</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-108646" class="wmd-preview-section preview-content">
+
+<h3 id="php5-file-upload">PHP5 File Upload</h3>
+
+<blockquote>
+  <p>PHP 中上传文件是很容易的, 但是开发者必须很小心用户上传的文件有可能会对数据和服务器造成攻击</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-112580" class="wmd-preview-section preview-content">
+
+<h4 id="configure-the-phpini-file">Configure The “<code>php.ini</code>” File</h4>
+
+<blockquote>
+  <p>首先, 开发者要在<code>php.ini</code>文件中允许用户上传文件.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-112925" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs ini"><span class="hljs-setting">file_uploads = <span class="hljs-value"><span class="hljs-keyword">On</span></span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-127189" class="wmd-preview-section preview-content">
+
+<h4 id="create-the-html-form">Create The HTML Form</h4>
+
+<blockquote>
+  <p>注意: </p>
+  
+  <ul><li>form的提交要用<code>method="post"</code></li>
+  <li>form还可以添加一些别的属性: <code>enctype="multipart/form-data"</code>, 这具体说明了提交form的时候用了哪一种编码形式</li>
+  <li><code>type="file"</code>是用来上传文件的, 会在输入框边上生成一个选择文件的<code>"Browse"</code>按钮</li>
+  <li>提交后的form信息会被存储到<code>upload.php</code>文件中.</li>
+  </ul>
+</blockquote></div><div id="wmd-preview-section-127364" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">"upload.php"</span> <span class="hljs-attribute">method</span>=<span class="hljs-value">"post"</span> <span class="hljs-attribute">enctype</span>=<span class="hljs-value">"multipart/form-data"</span>&gt;</span><br>    Select image to upload:<br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"file"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"fileToUpload"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fileToUpload"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Upload Image"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"submit"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-137745" class="wmd-preview-section preview-content">
+
+<h4 id="create-the-upload-file-php-script">Create The Upload File PHP Script</h4>
+
+<blockquote>
+  <p><code>$target_dir = "uploads/"</code>声明了文件上传后存储的位置 <br>
+  <code>$target_file</code>声明了上传文件在用户本地的路径 <br>
+  <code>$imageFileType</code>存储了上传文件的文件扩展名</p>
+</blockquote></div><div id="wmd-preview-section-138275" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$target_dir</span> = <span class="hljs-string">"uploads/"</span>;<br><span class="hljs-variable">$target_file</span> = <span class="hljs-variable">$target_dir</span> . basename(<span class="hljs-variable">$_FILES</span>[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"name"</span>]);<br><span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">1</span>;<br><span class="hljs-variable">$imageFileType</span> = pathinfo(<span class="hljs-variable">$target_file</span>,PATHINFO_EXTENSION);<br><span class="hljs-comment">// Check if image file is a actual image or fake image</span><br><span class="hljs-keyword">if</span>(<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"submit"</span>])) {<br>    <span class="hljs-variable">$check</span> = getimagesize(<span class="hljs-variable">$_FILES</span>[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"tmp_name"</span>]);<br>    <span class="hljs-keyword">if</span>(<span class="hljs-variable">$check</span> !== <span class="hljs-keyword">false</span>) {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"File is an image - "</span> . <span class="hljs-variable">$check</span>[<span class="hljs-string">"mime"</span>] . <span class="hljs-string">"."</span>;<br>        <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">1</span>;<br>    } <span class="hljs-keyword">else</span> {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"File is not an image."</span>;<br>        <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">0</span>;<br>    }<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-145364" class="wmd-preview-section preview-content">
+
+<h4 id="check-if-file-already-exists">Check if File Already Exists</h4>
+
+<blockquote>
+  <p>在上传文件前, 开发者可以先检查用户是否已经上传了一样的文件到服务器的<code>upload</code>文件夹中. 如果已经上传了, 那么显示提示信息,  同时<code>$uploadOk</code>设为0.</p>
+</blockquote></div><div id="wmd-preview-section-145186" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs bash">// Check <span class="hljs-keyword">if</span> file already exists<br><span class="hljs-keyword">if</span> (file_exists(<span class="hljs-variable">$target_file</span>)) {<br>    <span class="hljs-built_in">echo</span> <span class="hljs-string">"Sorry, file already exists."</span>;<br>    <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">0</span>;<br>}<br></code></pre></div><div id="wmd-preview-section-148066" class="wmd-preview-section preview-content">
+
+<h4 id="limit-file-size-and-type">Limit File Size and Type</h4>
+
+<blockquote>
+  <p>同时, 开发者还可以给于上传文件大小的限制和文件的类型, 如果超出限制或者文件类型不符合, 那么显示提示信息,  同时<code>$uploadOk</code>设为0.</p>
+</blockquote></div><div id="wmd-preview-section-147705" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown"> // Check file size<br>if ($_FILES[<span class="hljs-link_label">"fileToUpload"</span>][<span class="hljs-link_reference">"size"</span>] &gt; 500000) {<br><span class="hljs-code">    echo "Sorry, your file is too large.";</span><br><span class="hljs-code">    $uploadOk = 0;</span><br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-148430" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs php"><span class="hljs-comment">// Allow certain file formats</span><br><span class="hljs-keyword">if</span>(<span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"jpg"</span> &amp;&amp; <span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"png"</span> &amp;&amp; <span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"jpeg"</span><br>&amp;&amp; <span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"gif"</span> ) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, only JPG, JPEG, PNG &amp; GIF files are allowed."</span>;<br>    <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">0</span>;<br>}<br></code></pre>
+
+</div><div id="wmd-preview-section-149159" class="wmd-preview-section preview-content">
+
+<h4 id="完整的代码">完整的代码</h4>
+
+</div><div id="wmd-preview-section-149892" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$target_dir</span> = <span class="hljs-string">"uploads/"</span>;<br><span class="hljs-variable">$target_file</span> = <span class="hljs-variable">$target_dir</span> . basename(<span class="hljs-variable">$_FILES</span>[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"name"</span>]);<br><span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">1</span>;<br><span class="hljs-variable">$imageFileType</span> = pathinfo(<span class="hljs-variable">$target_file</span>,PATHINFO_EXTENSION);<br><span class="hljs-comment">// Check if image file is a actual image or fake image</span><br><span class="hljs-keyword">if</span>(<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">"submit"</span>])) {<br>    <span class="hljs-variable">$check</span> = getimagesize(<span class="hljs-variable">$_FILES</span>[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"tmp_name"</span>]);<br>    <span class="hljs-keyword">if</span>(<span class="hljs-variable">$check</span> !== <span class="hljs-keyword">false</span>) {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"File is an image - "</span> . <span class="hljs-variable">$check</span>[<span class="hljs-string">"mime"</span>] . <span class="hljs-string">"."</span>;<br>        <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">1</span>;<br>    } <span class="hljs-keyword">else</span> {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"File is not an image."</span>;<br>        <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">0</span>;<br>    }<br>}<br><span class="hljs-comment">// Check if file already exists</span><br><span class="hljs-keyword">if</span> (file_exists(<span class="hljs-variable">$target_file</span>)) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, file already exists."</span>;<br>    <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">0</span>;<br>}<br><span class="hljs-comment">// Check file size</span><br><span class="hljs-keyword">if</span> (<span class="hljs-variable">$_FILES</span>[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"size"</span>] &gt; <span class="hljs-number">500000</span>) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, your file is too large."</span>;<br>    <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">0</span>;<br>}<br><span class="hljs-comment">// Allow certain file formats</span><br><span class="hljs-keyword">if</span>(<span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"jpg"</span> &amp;&amp; <span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"png"</span> &amp;&amp; <span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"jpeg"</span><br>&amp;&amp; <span class="hljs-variable">$imageFileType</span> != <span class="hljs-string">"gif"</span> ) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, only JPG, JPEG, PNG &amp; GIF files are allowed."</span>;<br>    <span class="hljs-variable">$uploadOk</span> = <span class="hljs-number">0</span>;<br>}<br><span class="hljs-comment">// Check if $uploadOk is set to 0 by an error</span><br><span class="hljs-keyword">if</span> (<span class="hljs-variable">$uploadOk</span> == <span class="hljs-number">0</span>) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, your file was not uploaded."</span>;<br><span class="hljs-comment">// if everything is ok, try to upload file</span><br>} <span class="hljs-keyword">else</span> {<br>    <span class="hljs-keyword">if</span> (move_uploaded_file(<span class="hljs-variable">$_FILES</span>[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"tmp_name"</span>], <span class="hljs-variable">$target_file</span>)) {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"The file "</span>. basename( <span class="hljs-variable">$_FILES</span>[<span class="hljs-string">"fileToUpload"</span>][<span class="hljs-string">"name"</span>]). <span class="hljs-string">" has been uploaded."</span>;<br>    } <span class="hljs-keyword">else</span> {<br>        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Sorry, there was an error uploading your file."</span>;<br>    }<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br></code></pre>
+
+</div><div id="wmd-preview-section-155965" class="wmd-preview-section preview-content">
+
+<h3 id="php5-cookies">PHP5 Cookies</h3>
+
+<blockquote>
+  <p>Cookie是用来区分用户的. <br>
+  每次用户访问服务器的时候, 服务器会给用户的电脑嵌入一个文件, cookie. 当同一台电脑请求访问页面的时候, 电脑也会给服务器发送一个cookie.</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-158371" class="wmd-preview-section preview-content">
+
+<h4 id="create-cookies-with-php">Create Cookies With PHP</h4>
+
+<blockquote>
+  <p>PHP中, 开发者可以用<code>setcookie()</code>来生成一个cookie</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-158931" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs puppet">setcookie(<span class="hljs-literal">name</span>, value, expire, <span class="hljs-built_in">path</span>, <span class="hljs-built_in">domain</span>, secure, httponly);<br></code></pre>
+
+</div><div id="wmd-preview-section-181866" class="wmd-preview-section preview-content">
+
+<h4 id="php-createretrieve-a-cookie">PHP Create/Retrieve a Cookie</h4>
+
+<blockquote>
+  <p><code>setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");</code></p>
+  
+  <ul><li>生成了一个叫做<code>"user"</code>的cookie, 值是<code>John Doe</code>.</li>
+  <li>这个Cookie会在 30天后过期.</li>
+  <li><code>"/"</code>表示这个cookie在整个网站都可以使用</li>
+  </ul>
+  
+  <p>开发者可以用<code>$_COOKIE</code>来检索<code>"user"</code>的值, 还可以用<code>isset()</code>来检查cookie是否被设置了. <br>
+  <strong>注意</strong>: <code>setcookie()</code>必须在放置在<code>&lt;html&gt;</code>之前, cookie的值在上传时候会被自动的加密, 同时下载的时候也会被自动的解密. 如果要防止被加密的话, 可以使用<code>setrawcookie()</code>.</p>
+</blockquote></div><div id="wmd-preview-section-182244" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-variable">$cookie_name</span> = <span class="hljs-string">"user"</span>;<br><span class="hljs-variable">$cookie_value</span> = <span class="hljs-string">"John Doe"</span>;<br>setcookie(<span class="hljs-variable">$cookie_name</span>, <span class="hljs-variable">$cookie_value</span>, time() + (<span class="hljs-number">86400</span> * <span class="hljs-number">30</span>), <span class="hljs-string">"/"</span>); <span class="hljs-comment">// 86400 = 1 day</span><br><span class="hljs-preprocessor">?&gt;</span></span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">if</span>(!<span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_COOKIE</span>[<span class="hljs-variable">$cookie_name</span>])) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Cookie named '"</span> . <span class="hljs-variable">$cookie_name</span> . <span class="hljs-string">"' is not set!"</span>;<br>} <span class="hljs-keyword">else</span> {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Cookie '"</span> . <span class="hljs-variable">$cookie_name</span> . <span class="hljs-string">"' is set!&lt;br&gt;"</span>;<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Value is: "</span> . <span class="hljs-variable">$_COOKIE</span>[<span class="hljs-variable">$cookie_name</span>];<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-184135" class="wmd-preview-section preview-content">
+
+<h4 id="modify-a-cookie-value">Modify a Cookie Value</h4>
+
+<blockquote>
+  <p>如果要修改cookie的值, 还是使用<code>setcookie()</code></p>
+</blockquote>
+
+</div><div id="wmd-preview-section-187746" class="wmd-preview-section preview-content">
+
+<h4 id="delete-a-cookie">Delete a Cookie</h4>
+
+<blockquote>
+  <p>如果需要删除cookie, 只需要把截止日期设置为过去的时间即可</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-188130" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// set the expiration date to one hour ago</span><br>setcookie(<span class="hljs-string">"user"</span>, <span class="hljs-string">""</span>, time() - <span class="hljs-number">3600</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Cookie 'user' is deleted."</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-191203" class="wmd-preview-section preview-content">
+
+<h4 id="check-if-cookies-are-enabled">Check if Cookies are Enabled</h4>
+
+<blockquote>
+  <p>开发者可以用<code>$_COOKIE</code>来检测cookie是否可以用</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-192170" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>setcookie(<span class="hljs-string">"test_cookie"</span>, <span class="hljs-string">"test"</span>, time() + <span class="hljs-number">3600</span>, <span class="hljs-string">'/'</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-keyword">if</span>(count(<span class="hljs-variable">$_COOKIE</span>) &gt; <span class="hljs-number">0</span>) {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Cookies are enabled."</span>;<br>} <span class="hljs-keyword">else</span> {<br>    <span class="hljs-keyword">echo</span> <span class="hljs-string">"Cookies are disabled."</span>;<br>}<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-200126" class="wmd-preview-section preview-content">
+
+<h3 id="php-5-sessions">PHP 5 Sessions</h3>
+
+<blockquote>
+  <p>Session是用来提供多个页面之间传输数据的方法. <br>
+  与Cookie不同的是, session不会存储在用户的电脑上. <br>
+  Session的数据不会丢失 直到当用户关闭浏览器</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-207361" class="wmd-preview-section preview-content">
+
+<h4 id="start-a-php-session">Start a PHP Session</h4>
+
+<blockquote>
+  <p>PHP中用<code>seesion_start()</code>来建立一个session, 会被存储到<code>$_SESSION</code>中. <br>
+  注意<code>session_start()</code>一定要在文档的最开始, 尤其在<code>&lt;html&gt;</code>之前</p>
+</blockquote></div><div id="wmd-preview-section-208147" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// Start the session</span><br>session_start();<br><span class="hljs-preprocessor">?&gt;</span></span><br><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// Set session variables</span><br><span class="hljs-variable">$_SESSION</span>[<span class="hljs-string">"favcolor"</span>] = <span class="hljs-string">"green"</span>;<br><span class="hljs-variable">$_SESSION</span>[<span class="hljs-string">"favanimal"</span>] = <span class="hljs-string">"cat"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Session variables are set."</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-217041" class="wmd-preview-section preview-content">
+
+<h4 id="get-php-session-variable-values">Get PHP Session Variable Values</h4>
+
+<blockquote>
+  <p>Session不会自己传递到每个页面, 需要开发者在每个页面开头检索一下是否有session, 并且恢复session. <br>
+  通常, session会在用户的电脑里面安置一个user-key, 当用户打开别的页面的时候, 它会搜寻这个user-key, 如果符合了, 就允许访问这个session, 如果不符合就会开始一个新的session.</p>
+</blockquote></div><div id="wmd-preview-section-217637" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>session_start();<br><span class="hljs-preprocessor">?&gt;</span></span><br><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// Echo session variables that were set on previous page</span><br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Favorite color is "</span> . <span class="hljs-variable">$_SESSION</span>[<span class="hljs-string">"favcolor"</span>] . <span class="hljs-string">".&lt;br&gt;"</span>;<br><span class="hljs-keyword">echo</span> <span class="hljs-string">"Favorite animal is "</span> . <span class="hljs-variable">$_SESSION</span>[<span class="hljs-string">"favanimal"</span>] . <span class="hljs-string">"."</span>;<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre></div><div id="wmd-preview-section-220623" class="wmd-preview-section preview-content">
+
+<h4 id="modify-a-php-session-variable">Modify a PHP Session Variable</h4>
+
+<blockquote>
+  <p>如果开发者要修改session, 那么只需要覆盖它即可</p>
+</blockquote>
+
+</div><div id="wmd-preview-section-221225" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>session_start();<br><span class="hljs-preprocessor">?&gt;</span></span><br><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// to change a session variable, just overwrite it </span><br><span class="hljs-variable">$_SESSION</span>[<span class="hljs-string">"favcolor"</span>] = <span class="hljs-string">"yellow"</span>;<br>print_r(<span class="hljs-variable">$_SESSION</span>);<br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+</div><div id="wmd-preview-section-225246" class="wmd-preview-section preview-content">
+
+<h4 id="destroy-a-php-session">Destroy a PHP Session</h4>
+
+<blockquote>
+  <p>如果需要移除所有的global session variables或者销毁这个session, 可以用<code>session_unset()</code>和<code>session_destroy()</code></p>
+</blockquote>
+
+</div><div id="wmd-preview-section-225247" class="wmd-preview-section preview-content">
+
+<pre class="prettyprint hljs-dark"><code class="hljs xml"><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br>session_start();<br><span class="hljs-preprocessor">?&gt;</span></span><br><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span><br><br><span class="php"><span class="hljs-preprocessor">&lt;?php</span><br><span class="hljs-comment">// remove all session variables</span><br>session_unset(); <br><br><span class="hljs-comment">// destroy the session </span><br>session_destroy(); <br><span class="hljs-preprocessor">?&gt;</span></span><br><br><span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span><br></code></pre>
+
+<hr>
+
+<h5 style="float: right" id="author-shaowei-zhang">Author: Shaowei Zhang</h5></div><div id="wmd-preview-section-footnotes" class="preview-content"></div></div></body></html>
