@@ -1,0 +1,10 @@
+.content-behind-map			{	width:100%; position:relative;min-height: 0px !important;}
+.originalmap				{	position: relative !important;   
+								-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+							  filter: none !important;
+							  -moz-opacity: 1 !important;
+							  -khtml-opacity: 1 !important;
+							  opacity: 1 !important;
+							}
+			#overlaymap0		{	display:none !important}
+			#mapgyver_holder	{	height:100% !important}

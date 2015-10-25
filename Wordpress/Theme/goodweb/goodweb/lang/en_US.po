@@ -1,0 +1,1532 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Goodweb - One + Multipage WordPress Theme v1.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-14 14:58+0100\n"
+"PO-Revision-Date: 2014-10-30 12:41:55+0000\n"
+"Last-Translator: Damojo <info@damojothemes>\n"
+"Language-Team: Damojo <info@damojothemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: E:/WORK/HTML&WP/ApexWP\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: E:/WORK/HTML&WP/ApexWP\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:51
+#@ goodweb
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:9
+#@ goodweb
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "This post is password protected. Enter the password to view any comments."
+
+#: blog_template.php:117
+#: comments.php:15
+#: search.php:75
+#: single-portfolio.php:92
+#: single.php:67
+#@ goodweb
+msgid "Comments"
+msgstr "Comments"
+
+#: comments.php:40
+#@ goodweb
+msgid "Older Comments "
+msgstr "Older Comments "
+
+#: comments.php:41
+#@ goodweb
+msgid "Newer Comments"
+msgstr "Newer Comments"
+
+#: comments.php:49
+#: functions/theme_builder.php:395
+#: functions/theme_builder.php:560
+#@ goodweb
+#@ frontend-builder
+msgid "Name"
+msgstr "Name"
+
+#: comments.php:50
+#@ goodweb
+msgid "Email"
+msgstr "Email"
+
+#: blog_template.php:68
+#: header.php:41
+#@ goodweb
+msgid "Archive"
+msgstr "Archive"
+
+#: blog_template.php:57
+#: header.php:45
+#@ goodweb
+msgid "Tag Archive"
+msgstr "Tag Archive"
+
+#: blog_template.php:54
+#: header.php:44
+#@ goodweb
+msgid "Category"
+msgstr "Category"
+
+#: header.php:38
+#@ goodweb
+msgid "Portfolio"
+msgstr ""
+
+#: functions/theme_functions.php:95
+#, php-format
+#@ goodweb
+msgid "View all posts in %s"
+msgstr ""
+
+#: blog_template.php:118
+#: comments.php:16
+#: search.php:76
+#: single-portfolio.php:93
+#: single.php:68
+#@ goodweb
+msgid " Comments"
+msgstr ""
+
+#: search.php:16
+#@ goodweb
+msgid "hit for"
+msgstr ""
+
+#: search.php:16
+#@ goodweb
+msgid "hits for"
+msgstr ""
+
+#: header.php:46
+#: search.php:20
+#@ goodweb
+msgid "Search"
+msgstr ""
+
+#: comments.php:55
+#@ goodweb
+msgid "Enter your comment here..."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:155
+#: functions/theme_plugins.php:88
+#@ tgmpa
+#@ goodweb_plugins
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:156
+#: functions/theme_plugins.php:89
+#@ tgmpa
+#@ goodweb_plugins
+msgid "Install Plugins"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:157
+#: functions/theme_plugins.php:90
+#, php-format
+#@ tgmpa
+#@ goodweb_plugins
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:158
+#@ tgmpa
+msgid "Something went wrong."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:159
+#: functions/theme_plugins.php:92
+#, php-format
+#@ goodweb
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:160
+#: functions/theme_plugins.php:93
+#, php-format
+#@ goodweb
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:161
+#: functions/theme_plugins.php:94
+#, php-format
+#@ goodweb
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:162
+#: functions/theme_plugins.php:95
+#, php-format
+#@ goodweb
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:163
+#: functions/theme_plugins.php:96
+#, php-format
+#@ goodweb
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:164
+#: functions/theme_plugins.php:97
+#, php-format
+#@ goodweb
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:165
+#: functions/theme_plugins.php:98
+#, php-format
+#@ goodweb
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:166
+#: functions/theme_plugins.php:99
+#, php-format
+#@ goodweb
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:167
+#: functions/theme_plugins.php:100
+#@ goodweb
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:168
+#: functions/theme_plugins.php:101
+#@ goodweb
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:169
+#: functions/theme_plugins.php:102
+#@ tgmpa
+#@ goodweb_plugins
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:171
+#: functions/class-tgm-plugin-activation.php:1840
+#: functions/theme_plugins.php:103
+#@ tgmpa
+#@ goodweb_plugins
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:173
+#, php-format
+#@ tgmpa
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:2052
+#@ tgmpa
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:174
+#@ tgmpa
+msgid "Dismiss this notice"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1085
+#@ tgmpa
+msgid "External Link"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1090
+#@ tgmpa
+msgid "Private Repository"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1093
+#@ tgmpa
+msgid "Pre-Packaged"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1097
+#@ tgmpa
+msgid "WordPress Repository"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1100
+#@ tgmpa
+msgid "Required"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1100
+#@ tgmpa
+msgid "Recommended"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1103
+#@ tgmpa
+msgid "Not Installed"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1105
+#@ tgmpa
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1275
+#, php-format
+#@ tgmpa
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1291
+#@ tgmpa
+msgid "Plugin"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1292
+#@ tgmpa
+msgid "Source"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1293
+#@ tgmpa
+msgid "Type"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1294
+#@ tgmpa
+msgid "Status"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1312
+#@ tgmpa
+msgid "Install"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1313
+#@ tgmpa
+msgid "Activate"
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: functions/class-tgm-plugin-activation.php:1538
+#: functions/class-tgm-plugin-activation.php:172
+#@ tgmpa
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:1823
+#@ tgmpa
+msgid "Install package not available."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1824
+#, php-format
+#@ tgmpa
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1825
+#@ tgmpa
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1826
+#@ tgmpa
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1827
+#@ tgmpa
+msgid "Plugin install failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1828
+#@ tgmpa
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1839
+#@ tgmpa
+msgid "Plugin activation failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1949
+#@ tgmpa
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1950
+#, php-format
+#@ tgmpa
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1950
+#: functions/class-tgm-plugin-activation.php:1959
+#@ tgmpa
+msgid "Show Details"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1950
+#: functions/class-tgm-plugin-activation.php:1959
+#@ tgmpa
+msgid "Hide Details"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1951
+#@ tgmpa
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1952
+#, php-format
+#@ tgmpa
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1956
+#@ tgmpa
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1957
+#, php-format
+#@ tgmpa
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1958
+#, php-format
+#@ tgmpa
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1959
+#, php-format
+#@ tgmpa
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1960
+#@ tgmpa
+msgid "All installations have been completed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1961
+#, php-format
+#@ tgmpa
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/theme_functions.php:537
+#, php-format
+#@ goodweb
+msgid "Use commas instead of %s to separate excluded categories."
+msgstr ""
+
+#: functions/theme_pagination.php:47
+#: functions/theme_pagination.php:115
+#@ goodweb
+msgid "next"
+msgstr ""
+
+#: functions/theme_pagination.php:51
+#: functions/theme_pagination.php:61
+#: functions/theme_pagination.php:119
+#: functions/theme_pagination.php:129
+#@ goodweb
+msgid "last"
+msgstr ""
+
+#: functions/theme_pagination.php:57
+#: functions/theme_pagination.php:125
+#@ goodweb
+msgid "first"
+msgstr ""
+
+#: functions/theme_pagination.php:154
+#: functions/theme_pagination.php:157
+#: functions/theme_pagination.php:160
+#: functions/theme_pagination.php:182
+#: functions/theme_pagination.php:185
+#: functions/theme_pagination.php:188
+#@ goodweb
+msgid "Previous Page"
+msgstr ""
+
+#: functions/theme_pagination.php:154
+#: functions/theme_pagination.php:157
+#: functions/theme_pagination.php:160
+#: functions/theme_pagination.php:182
+#: functions/theme_pagination.php:185
+#: functions/theme_pagination.php:188
+#@ goodweb
+msgid "Next Page"
+msgstr ""
+
+#: functions/theme_plugins.php:91
+#@ goodweb_plugins
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions/theme_plugins.php:104
+#, php-format
+#@ goodweb_plugins
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: blog_template.php:66
+#@ goodweb
+msgid "Portfolio Category"
+msgstr ""
+
+#: blog_template.php:118
+#: comments.php:16
+#: search.php:76
+#: single-portfolio.php:93
+#: single.php:68
+#@ goodweb
+msgid "Comment"
+msgstr ""
+
+#: comments.php:25
+#@ goodweb
+msgid " for this post"
+msgstr ""
+
+#: comments.php:54
+#@ goodweb
+msgid "Leave A Reply"
+msgstr ""
+
+#: comments.php:56
+#@ goodweb
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:81
+#@ goodweb
+msgid "REPLY"
+msgstr ""
+
+#: comments.php:94
+#@ goodweb
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:170
+#@ tgmpa
+msgid "Return to the dashboard"
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: functions/navigation/edit_custom_walker.php:78
+#, php-format
+#@ goodweb
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: functions/navigation/edit_custom_walker.php:82
+#, php-format
+#@ goodweb
+msgid "%s (Pending)"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:106
+#@ default
+msgid "Move up"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:119
+#@ default
+msgid "Move down"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:121
+#: functions/navigation/edit_custom_walker.php:123
+#@ default
+#@ goodweb
+msgid "Edit Menu Item"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:132
+#@ goodweb
+msgid "URL"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:139
+#@ goodweb
+msgid "Navigation Label"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:146
+#@ goodweb
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:151
+#@ goodweb
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:157
+#@ goodweb
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:163
+#@ goodweb
+msgid "Description"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:165
+#@ goodweb
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:184
+#@ goodweb
+msgid "Opens in a single page"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:196
+#, php-format
+#@ goodweb
+msgid "Original: %s"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:209
+#@ goodweb
+msgid "Remove"
+msgstr ""
+
+#: functions/navigation/edit_custom_walker.php:210
+#@ goodweb
+msgid "Cancel"
+msgstr ""
+
+#: functions/theme_builder.php:20
+#@ frontend-builder
+msgid "No RevSlider available"
+msgstr ""
+
+#: functions/theme_builder.php:31
+#@ frontend-builder
+msgid "Text / HTML"
+msgstr ""
+
+#: functions/theme_builder.php:37
+#: functions/theme_builder.php:201
+#: functions/theme_builder.php:260
+#: functions/theme_builder.php:878
+#@ frontend-builder
+msgid "Content"
+msgstr ""
+
+#: functions/theme_builder.php:43
+#: functions/theme_builder.php:62
+#@ frontend-builder
+msgid "Display boxed?"
+msgstr ""
+
+#: functions/theme_builder.php:51
+#@ frontend-builder
+msgid "Shortcode"
+msgstr ""
+
+#: functions/theme_builder.php:69
+#: functions/theme_builder.php:713
+#@ frontend-builder
+msgid "Headline"
+msgstr ""
+
+#: functions/theme_builder.php:82
+#@ frontend-builder
+msgid "Divider Line"
+msgstr ""
+
+#: functions/theme_builder.php:88
+#@ frontend-builder
+msgid "Top margin"
+msgstr ""
+
+#: functions/theme_builder.php:96
+#@ frontend-builder
+msgid "Bottom margin"
+msgstr ""
+
+#: functions/theme_builder.php:106
+#@ frontend-builder
+msgid "Clear Floats"
+msgstr ""
+
+#: functions/theme_builder.php:112
+#@ frontend-builder
+msgid "Spacer"
+msgstr ""
+
+#: functions/theme_builder.php:118
+#@ frontend-builder
+msgid "Height"
+msgstr ""
+
+#: functions/theme_builder.php:124
+#@ frontend-builder
+msgid "Visible Phone"
+msgstr ""
+
+#: functions/theme_builder.php:125
+#: functions/theme_builder.php:130
+#: functions/theme_builder.php:135
+#: functions/theme_builder.php:140
+#: functions/theme_builder.php:145
+#: functions/theme_builder.php:150
+#@ frontend-builder
+msgid "Check Responsive utility classes <a href=\"http://getbootstrap.com/2.3.2/scaffolding.html#responsive\" target=\"_blank\">here</a>"
+msgstr ""
+
+#: functions/theme_builder.php:129
+#@ frontend-builder
+msgid "Visible Tablet"
+msgstr ""
+
+#: functions/theme_builder.php:134
+#@ frontend-builder
+msgid "Visible Desktop"
+msgstr ""
+
+#: functions/theme_builder.php:139
+#@ frontend-builder
+msgid "Hidden Phone"
+msgstr ""
+
+#: functions/theme_builder.php:144
+#@ frontend-builder
+msgid "Hidden Tablet"
+msgstr ""
+
+#: functions/theme_builder.php:149
+#@ frontend-builder
+msgid "Hidden Desktop"
+msgstr ""
+
+#: functions/theme_builder.php:156
+#@ frontend-builder
+msgid "Tabs"
+msgstr ""
+
+#: functions/theme_builder.php:162
+#@ frontend-builder
+msgid "Tab elements"
+msgstr ""
+
+#: functions/theme_builder.php:163
+#: functions/theme_builder.php:226
+#: functions/theme_builder.php:449
+#: functions/theme_builder.php:507
+#: functions/theme_builder.php:924
+#@ frontend-builder
+msgid "Elements are sortable"
+msgstr ""
+
+#: functions/theme_builder.php:164
+#@ frontend-builder
+msgid "tabs item"
+msgstr ""
+
+#: functions/theme_builder.php:196
+#: functions/theme_builder.php:256
+#: functions/theme_builder.php:341
+#: functions/theme_builder.php:476
+#: functions/theme_builder.php:869
+#: functions/theme_builder.php:973
+#@ frontend-builder
+msgid "Title"
+msgstr ""
+
+#: functions/theme_builder.php:210
+#@ frontend-builder
+msgid "Accordion"
+msgstr ""
+
+#: functions/theme_builder.php:216
+#: functions/theme_builder.php:663
+#@ frontend-builder
+msgid "Style"
+msgstr ""
+
+#: functions/theme_builder.php:219
+#: functions/theme_builder.php:666
+#@ frontend-builder
+msgid "Colored"
+msgstr ""
+
+#: functions/theme_builder.php:220
+#: functions/theme_builder.php:667
+#@ frontend-builder
+msgid "Transparent"
+msgstr ""
+
+#: functions/theme_builder.php:225
+#@ frontend-builder
+msgid "Accordion elements"
+msgstr ""
+
+#: functions/theme_builder.php:227
+#@ frontend-builder
+msgid "accordion item"
+msgstr ""
+
+#: functions/theme_builder.php:264
+#@ frontend-builder
+msgid "Active"
+msgstr ""
+
+#: functions/theme_builder.php:265
+#@ frontend-builder
+msgid "Only one panel can be active at a time, so be sure to uncheck the others for it to work properly"
+msgstr ""
+
+#: functions/theme_builder.php:274
+#@ frontend-builder
+msgid "GoodButton"
+msgstr ""
+
+#: functions/theme_builder.php:280
+#: functions/theme_builder.php:351
+#: functions/theme_builder.php:738
+#@ frontend-builder
+msgid "Button Text"
+msgstr ""
+
+#: functions/theme_builder.php:281
+#: functions/theme_builder.php:352
+#: functions/theme_builder.php:739
+#@ frontend-builder
+msgid "Leave Blank for no Button"
+msgstr ""
+
+#: functions/theme_builder.php:282
+#@ frontend-builder
+msgid "Click Me"
+msgstr ""
+
+#: functions/theme_builder.php:286
+#: functions/theme_builder.php:357
+#: functions/theme_builder.php:744
+#@ frontend-builder
+msgid "Button URL"
+msgstr ""
+
+#: functions/theme_builder.php:287
+#: functions/theme_builder.php:358
+#: functions/theme_builder.php:745
+#@ frontend-builder
+msgid "ex. http://yoursite.com/"
+msgstr ""
+
+#: functions/theme_builder.php:292
+#: functions/theme_builder.php:363
+#: functions/theme_builder.php:750
+#@ frontend-builder
+msgid "Button URL Target"
+msgstr ""
+
+#: functions/theme_builder.php:295
+#: functions/theme_builder.php:366
+#: functions/theme_builder.php:753
+#@ frontend-builder
+msgid "Same Window/Tab"
+msgstr ""
+
+#: functions/theme_builder.php:296
+#: functions/theme_builder.php:367
+#: functions/theme_builder.php:754
+#@ frontend-builder
+msgid "New Window/Tab"
+msgstr ""
+
+#: functions/theme_builder.php:301
+#: functions/theme_builder.php:372
+#: functions/theme_builder.php:759
+#@ frontend-builder
+msgid "Button Text Color"
+msgstr ""
+
+#: functions/theme_builder.php:306
+#@ frontend-builder
+msgid "Button Color"
+msgstr ""
+
+#: functions/theme_builder.php:311
+#@ frontend-builder
+msgid "Arrow"
+msgstr ""
+
+#: functions/theme_builder.php:312
+#@ frontend-builder
+msgid "Show arrow on the right side"
+msgstr ""
+
+#: functions/theme_builder.php:316
+#@ frontend-builder
+msgid "Centered"
+msgstr ""
+
+#: functions/theme_builder.php:317
+#@ frontend-builder
+msgid "Show text centered"
+msgstr ""
+
+#: functions/theme_builder.php:321
+#@ frontend-builder
+msgid "Fullwidth"
+msgstr ""
+
+#: functions/theme_builder.php:322
+#@ frontend-builder
+msgid "Stretch to fullwidth of the surrounding container"
+msgstr ""
+
+#: functions/theme_builder.php:330
+#@ frontend-builder
+msgid "Service"
+msgstr ""
+
+#: functions/theme_builder.php:336
+#: functions/theme_builder.php:390
+#: functions/theme_builder.php:555
+#: functions/theme_builder.php:829
+#: functions/theme_builder.php:835
+#: functions/theme_builder.php:925
+#: functions/theme_builder.php:968
+#: functions/theme_builder.php:1005
+#@ frontend-builder
+msgid "Image"
+msgstr ""
+
+#: functions/theme_builder.php:377
+#: functions/theme_builder.php:767
+#@ frontend-builder
+msgid "Button color"
+msgstr ""
+
+#: functions/theme_builder.php:384
+#@ frontend-builder
+msgid "Team Member Single"
+msgstr ""
+
+#: functions/theme_builder.php:400
+#: functions/theme_builder.php:565
+#@ frontend-builder
+msgid "Position/Title"
+msgstr ""
+
+#: functions/theme_builder.php:410
+#: functions/theme_builder.php:569
+#@ frontend-builder
+msgid "Mail Address"
+msgstr ""
+
+#: functions/theme_builder.php:415
+#: functions/theme_builder.php:573
+#@ frontend-builder
+msgid "Phone Number"
+msgstr ""
+
+#: functions/theme_builder.php:420
+#: functions/theme_builder.php:577
+#@ frontend-builder
+msgid "Facebook Profile URL"
+msgstr ""
+
+#: functions/theme_builder.php:425
+#: functions/theme_builder.php:581
+#@ frontend-builder
+msgid "Twitter Profile URL"
+msgstr ""
+
+#: functions/theme_builder.php:430
+#: functions/theme_builder.php:585
+#@ frontend-builder
+msgid "Google+ Profile URL"
+msgstr ""
+
+#: functions/theme_builder.php:435
+#: functions/theme_builder.php:589
+#@ frontend-builder
+msgid "LinkedIn Profile URL"
+msgstr ""
+
+#: functions/theme_builder.php:442
+#: functions/theme_builder.php:448
+#@ frontend-builder
+msgid "Progress Bars"
+msgstr ""
+
+#: functions/theme_builder.php:450
+#@ frontend-builder
+msgid "bar"
+msgstr ""
+
+#: functions/theme_builder.php:481
+#@ frontend-builder
+msgid "%"
+msgstr ""
+
+#: functions/theme_builder.php:491
+#: functions/theme_builder.php:506
+#@ frontend-builder
+msgid "Team Wall"
+msgstr ""
+
+#: functions/theme_builder.php:497
+#: functions/theme_builder.php:672
+#: functions/theme_builder.php:674
+#: functions/theme_builder.php:896
+#@ frontend-builder
+msgid "Columns"
+msgstr ""
+
+#: functions/theme_builder.php:500
+#: functions/theme_builder.php:658
+#: functions/theme_builder.php:899
+#@ frontend-builder
+msgid "4"
+msgstr ""
+
+#: functions/theme_builder.php:501
+#: functions/theme_builder.php:657
+#: functions/theme_builder.php:900
+#@ frontend-builder
+msgid "3"
+msgstr ""
+
+#: functions/theme_builder.php:508
+#@ frontend-builder
+msgid "team member"
+msgstr ""
+
+#: functions/theme_builder.php:597
+#@ frontend-builder
+msgid "Video"
+msgstr ""
+
+#: functions/theme_builder.php:603
+#@ frontend-builder
+msgid "Hosting Type"
+msgstr ""
+
+#: functions/theme_builder.php:606
+#@ frontend-builder
+msgid "Iframe Hosted (Youtube/Vimeo...)"
+msgstr ""
+
+#: functions/theme_builder.php:607
+#@ frontend-builder
+msgid "Self Hosted (mp4)"
+msgstr ""
+
+#: functions/theme_builder.php:621
+#@ frontend-builder
+msgid "Link to mp4 File"
+msgstr ""
+
+#: functions/theme_builder.php:629
+#@ frontend-builder
+msgid "Link to placeholder image"
+msgstr ""
+
+#: functions/theme_builder.php:637
+#@ frontend-builder
+msgid "Fit surrounding Container"
+msgstr ""
+
+#: functions/theme_builder.php:648
+#@ frontend-builder
+msgid "Pricetable"
+msgstr ""
+
+#: functions/theme_builder.php:654
+#@ frontend-builder
+msgid "Columns per Row"
+msgstr ""
+
+#: functions/theme_builder.php:673
+#@ frontend-builder
+msgid "Columns are sortable"
+msgstr ""
+
+#: functions/theme_builder.php:708
+#@ frontend-builder
+msgid "Highlighted"
+msgstr ""
+
+#: functions/theme_builder.php:709
+#@ frontend-builder
+msgid "Highlight this column (only one column in a row should be highlighted)"
+msgstr ""
+
+#: functions/theme_builder.php:718
+#@ frontend-builder
+msgid "Subline"
+msgstr ""
+
+#: functions/theme_builder.php:723
+#@ frontend-builder
+msgid "Price"
+msgstr ""
+
+#: functions/theme_builder.php:728
+#@ frontend-builder
+msgid "Currency"
+msgstr ""
+
+#: functions/theme_builder.php:733
+#@ frontend-builder
+msgid "Price Subline"
+msgstr ""
+
+#: functions/theme_builder.php:740
+#@ frontend-builder
+msgid "Buy me"
+msgstr ""
+
+#: functions/theme_builder.php:775
+#@ frontend-builder
+msgid "Row 1 Text"
+msgstr ""
+
+#: functions/theme_builder.php:780
+#@ frontend-builder
+msgid "Row 2 Text"
+msgstr ""
+
+#: functions/theme_builder.php:785
+#@ frontend-builder
+msgid "Row 3 Text"
+msgstr ""
+
+#: functions/theme_builder.php:790
+#@ frontend-builder
+msgid "Row 4 Text"
+msgstr ""
+
+#: functions/theme_builder.php:795
+#@ frontend-builder
+msgid "Row 5 Text"
+msgstr ""
+
+#: functions/theme_builder.php:800
+#@ frontend-builder
+msgid "Row 6 Text"
+msgstr ""
+
+#: functions/theme_builder.php:805
+#@ frontend-builder
+msgid "Row 7 Text"
+msgstr ""
+
+#: functions/theme_builder.php:810
+#@ frontend-builder
+msgid "Row 8 Text"
+msgstr ""
+
+#: functions/theme_builder.php:815
+#@ frontend-builder
+msgid "Row 9 Text"
+msgstr ""
+
+#: functions/theme_builder.php:820
+#@ frontend-builder
+msgid "Row 10 Text"
+msgstr ""
+
+#: functions/theme_builder.php:840
+#@ frontend-builder
+msgid "Alignment"
+msgstr ""
+
+#: functions/theme_builder.php:843
+#@ frontend-builder
+msgid "none"
+msgstr ""
+
+#: functions/theme_builder.php:844
+#@ frontend-builder
+msgid "Left"
+msgstr ""
+
+#: functions/theme_builder.php:845
+#@ frontend-builder
+msgid "Right"
+msgstr ""
+
+#: functions/theme_builder.php:850
+#@ frontend-builder
+msgid "Link URL"
+msgstr ""
+
+#: functions/theme_builder.php:855
+#@ frontend-builder
+msgid "Link type"
+msgstr ""
+
+#: functions/theme_builder.php:857
+#@ frontend-builder
+msgid "open in new tab or lightbox"
+msgstr ""
+
+#: functions/theme_builder.php:859
+#@ frontend-builder
+msgid "Standard"
+msgstr ""
+
+#: functions/theme_builder.php:860
+#@ frontend-builder
+msgid "Open in new tab"
+msgstr ""
+
+#: functions/theme_builder.php:861
+#@ frontend-builder
+msgid "Lightbox"
+msgstr ""
+
+#: functions/theme_builder.php:890
+#: functions/theme_builder.php:923
+#@ frontend-builder
+msgid "Media Wall"
+msgstr ""
+
+#: functions/theme_builder.php:905
+#@ frontend-builder
+msgid "Lock Height"
+msgstr ""
+
+#: functions/theme_builder.php:907
+#@ frontend-builder
+msgid "force preview images to this px height(works only for images uploaded to this WordPress)"
+msgstr ""
+
+#: functions/theme_builder.php:911
+#@ frontend-builder
+msgid "Lightbox Autoplay"
+msgstr ""
+
+#: functions/theme_builder.php:916
+#@ frontend-builder
+msgid "Period in seconds"
+msgstr ""
+
+#: functions/theme_builder.php:978
+#@ frontend-builder
+msgid "Subtitle"
+msgstr ""
+
+#: functions/theme_builder.php:987
+#@ frontend-builder
+msgid "Hide Lightbox Title/Desc Box"
+msgstr ""
+
+#: functions/theme_builder.php:995
+#@ frontend-builder
+msgid "Lightbox type"
+msgstr ""
+
+#: functions/theme_builder.php:998
+#@ frontend-builder
+msgid "Same Image as Thumb"
+msgstr ""
+
+#: functions/theme_builder.php:999
+#@ frontend-builder
+msgid "Different Image"
+msgstr ""
+
+#: functions/theme_builder.php:1000
+#@ frontend-builder
+msgid "Embed Iframe (Youtube/Vimeo)"
+msgstr ""
+
+#: functions/theme_builder.php:1026
+#@ frontend-builder
+msgid "Google Map"
+msgstr ""
+
+#: functions/theme_builder.php:1038
+#@ frontend-builder
+msgid "Zoom"
+msgstr ""
+
+#: functions/theme_builder.php:1046
+#@ frontend-builder
+msgid "Min-Height"
+msgstr ""
+
+#: functions/theme_builder.php:1047
+#@ frontend-builder
+msgid "in px"
+msgstr ""
+
+#: functions/theme_builder.php:1059
+#: functions/theme_builder.php:1065
+#@ frontend-builder
+msgid "Widget Area"
+msgstr ""
+
+#: functions/theme_builder.php:1074
+#@ frontend-builder
+msgid "RevSlider"
+msgstr ""
+
+#: functions/theme_builder.php:1080
+#@ frontend-builder
+msgid "Choose Slider"
+msgstr ""
+
+#: functions/theme_functions.php:600
+#@ goodweb
+msgid "ago"
+msgstr ""
+
+#: functions/theme_javascriptcss.php:35
+#@ goodweb
+msgid "LOAD"
+msgstr ""
+
+#: functions/theme_javascriptcss.php:36
+#@ goodweb
+msgid "MORE"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:30
+#@ goodweb
+msgctxt "post type general name"
+msgid "Background Slider Items"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:31
+#@ goodweb
+msgctxt "post type singular name"
+msgid "Items"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:32
+#@ goodweb
+msgctxt "gallery"
+msgid "Add New"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:33
+#@ goodweb
+msgid "Add New Item"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:34
+#@ goodweb
+msgid "Edit Item"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:35
+#@ goodweb
+msgid "New Item"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:36
+#@ goodweb
+msgid "View Item"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:37
+#@ goodweb
+msgid "Search Item"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:38
+#@ goodweb
+msgid "No items found"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:39
+#@ goodweb
+msgid "No items found in Trash"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:59
+#@ goodweb
+msgctxt "taxonomy general name"
+msgid "Sliders"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:60
+#@ goodweb
+msgctxt "taxonomy singular name"
+msgid "Slider"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:61
+#@ goodweb
+msgid "Search Sliders"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:62
+#@ goodweb
+msgid "All Sliders"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:63
+#@ goodweb
+msgid "Parent Slider"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:64
+#@ goodweb
+msgid "Parent Slider:"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:65
+#@ goodweb
+msgid "Edit Slider"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:66
+#@ goodweb
+msgid "Update Slider"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:67
+#@ goodweb
+msgid "Add New Slider"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:68
+#@ goodweb
+msgid "New Slider Name"
+msgstr ""
+
+#: functions/theme_post_customtypes.php:69
+#@ goodweb
+msgid "Sliders"
+msgstr ""
+
+#: functions/theme_startmessage.php:34
+#@ goodweb
+msgid "Appearance"
+msgstr ""
+
+#: header.php:49
+#: header.php:133
+#: header.php:144
+#@ goodweb
+msgid "Home"
+msgstr ""
+
+#: header.php:51
+#@ goodweb
+msgid "Page not found"
+msgstr ""
+
+#: portfolio_archive_template.php:59
+#@ goodweb
+msgid "Portfolio "
+msgstr ""
+
+#: portfolio_template.php:103
+#@ goodweb
+msgid "ALL"
+msgstr ""
+
+#: search.php:86
+#: single-portfolio.php:153
+#: single-portfolio.php:172
+#: single.php:118
+#@ goodweb
+msgid "by"
+msgstr ""
+
+#: single-portfolio.php:37
+#@ goodweb
+msgid "PREVIOUS"
+msgstr ""
+
+#: single-portfolio.php:47
+#@ goodweb
+msgid "NEXT"
+msgstr ""
+
+#: single-portfolio.php:132
+#@ goodweb
+msgid "Portfolio Overview"
+msgstr "Main Portfolio"
+
+#: single-portfolio.php:158
+#: single-portfolio.php:177
+#: single.php:123
+#@ goodweb
+msgid "tagged:"
+msgstr ""
+
+#: single-portfolio.php:200
+#@ goodweb
+msgid "Related Projects"
+msgstr ""
+
+#: single.php:126
+#@ goodweb
+msgid "<strong>Pages:</strong>"
+msgstr ""
+
+#: single.php:131
+#@ tb_mebpo
+msgid "Next page"
+msgstr ""
+
+#: single.php:132
+#@ tb_mebpo
+msgid "Previous page"
+msgstr ""
+
+#: single.php:150
+#@ goodweb
+msgid "Related Posts"
+msgstr ""
+

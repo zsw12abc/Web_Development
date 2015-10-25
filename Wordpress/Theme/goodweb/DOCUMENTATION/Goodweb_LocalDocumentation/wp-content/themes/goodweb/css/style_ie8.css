@@ -1,0 +1,107 @@
+#cinematic-title-wrapper,
+.boxedbg,
+#mapgyver_holder,
+.thesidebar .widget	 	{	background:transparent !important;
+       							filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7f000000,endColorstr=#7f000000) !important;
+       							ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7f000000,endColorstr=#7f000000)" !important; 
+       						}
+
+
+.gw_light #cinematic-title-wrapper,
+.gw_light .boxedbg,
+.gw_light #mapgyver_holder,
+.gw_light .thesidebar .widget	 	{	background:transparent !important;
+       									filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7fffffff,endColorstr=#7fffffff) !important;
+	   									ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7fffffff,endColorstr=#7fffffff)" !important; 
+	   								}
+       						
+select, textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"],
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input,
+.wpcf7-submit,
+#From_Comment_Go 
+			 				{	background:transparent !important;
+       							filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#41000000,endColorstr=#41000000) !important;
+       							ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#41000000,endColorstr=#41000000)" !important; 
+       							border:1px solid #000;
+       						}
+       						
+       						
+.gw_light select, 
+.gw_light textarea, 
+.gw_light input[type="text"], 
+.gw_light input[type="password"], 
+.gw_light input[type="datetime"], 
+.gw_light input[type="datetime-local"],
+.gw_light input[type="date"], 
+.gw_light input[type="month"], 
+.gw_light input[type="time"], 
+.gw_light input[type="week"], 
+.gw_light input[type="number"], 
+.gw_light input[type="email"], 
+.gw_light input[type="url"], 
+.gw_light input[type="search"], 
+.gw_light input[type="tel"], 
+.gw_light input[type="color"], 
+.gw_light .uneditable-input,
+.gw_light .wpcf7-submit,
+.gw_light #From_Comment_Go 
+			 				{	background:transparent !important;
+       							filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#41ffffff,endColorstr=#41ffffff) !important;
+       							ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#41ffffff,endColorstr=#41ffffff)" !important; 
+       							border:1px solid #fff;
+       						}
+			
+
+
+#cinematic-navigation .cinematic-left,
+#cinematic-navigation .cinematic-right,
+#cinematic-navigation .cinematic-down		{  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+												filter: alpha(opacity=100);
+												-moz-opacity: 1;
+												-khtml-opacity: 1;
+												opacity: 1; visibility: hidden;
+											}
+											
+body						{	color:#fff !important}		
+body.gw_light				{ 	color:#000 !important}
+
+.decoredbutton:after		{	right:-20px; }
+
+.tp-bullets.simplebullets.round .bullet			{	margin-top:0px !important;}
+.tp-bullets.simplebullets .bullet.selected 		{	background: #fff !important; border:4px solid #000 !important;}
+.tp-bullets.simplebullets .bullet				{	background: #000 !important; border:4px solid #000 !important;}
+
+.roundimage img				{	border-radius: none !important border:none !important; width:140px;height:140px;}
+
+#blogoverview				{	width:940px}
+
+.bo-post					{	width:373px}
+
+#maincontent				{	filter:none !important;visibility: hidden}
+.isotope-item				{	overflow: hidden !important; z-index:1; visibility: visible; display: block;}
+.isotope-hidden	 			{ 	z-index:0;visibility: hidden !important; display:none !important}
+
+.content-behind-map			{	width:100%; position:relative;min-height: 0px !important;}
+.originalmap				{	position: relative !important;   
+								-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+							  filter: none !important;
+							  -moz-opacity: 1 !important;
+							  -khtml-opacity: 1 !important;
+							  opacity: 1 !important;
+							}
+			#overlaymap0		{	display:none !important}
+			#mapgyver_holder	{	height:100% !important}
