@@ -1,0 +1,49 @@
+<nav>
+    <ul class="nav nav-pills nav-stacked">
+        <li>
+			<a ui-sref="index"><i class="fa fa-home">Home</i></a>
+        </li>
+
+        <li>
+            <a ui-sref="index.about"><i class="fa fa-question-circle">About</i></a>
+        </li>
+
+        <li>
+            <a ui-sref="index.contact"><i class="fa fa-phone-square">Contact</i></a>
+        </li>
+
+        <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" ui-sref="index.os" role="button" aria-haspopup="true" aria-expanded="false">我用过的手机</a>
+
+            <ul id="submenu" class="dropdown-menu pull-right">
+                <li id="submenu">
+                    <a ui-sref="index.os.ios">iOS</a>
+                </li>
+
+                <li id="submenu">
+                    <a ui-sref="index.os.wp">Windows Phone</a>
+                </li>
+
+                <li id="submenu">
+                    <a ui-sref="index.os.android">Android</a>
+                </li>
+
+                <li id="submenu">
+                    <a ui-sref="index.os.ubuntu">Ubuntu Mobile</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<footer>
+    <ul class="nav nav-pills nav-stacked">
+        <li>
+            <a href="#">Shaowei Zhang</a>
+        </li>
+
+        <li>
+            <a href="mailto:shaoweizhang.job@gmail.com">Email Me</a>
+        </li>
+    </ul>
+</footer>

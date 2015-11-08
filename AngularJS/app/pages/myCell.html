@@ -1,0 +1,111 @@
+<figure class="effect-lily">
+    <img src="{{phone.imageUrl}}" alt="img12" class="img-responsive">
+
+    <figcaption>
+        <div>
+            <h2>{{phone.name}}</h2>
+
+            <p>{{phone.snippet}}</p>
+        </div>
+    </figcaption>
+</figure>
+
+<style type="text/css">
+	
+/* Common style */
+.effect-lily {
+	position:relative;
+	overflow:hidden;
+	margin:10px 1%;
+	min-width:320px;
+	max-height:360px;
+	background:#3085a3;
+}
+
+.effect-lily figcaption {
+	color:#fff;
+	text-transform:uppercase;
+	font-size:1.25em;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+
+.effect-lily figcaption::before,.effect-lily figcaption::after {
+	pointer-events:none;
+}
+
+.effect-lily h2 {
+	word-spacing:-.15em;
+	font-weight:300;
+}
+
+.effect-lily h2 span {
+	font-weight:800;
+}
+
+.effect-lily h2,.effect-lily p {
+	margin:0;
+}
+
+.effect-lily p {
+	letter-spacing:1px;
+	font-size:68.5%;
+}
+
+/* Individual effects */
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+figure.effect-lily img {
+	max-width:none;
+	width:-webkit-calc(100% + 50px);
+	width:calc(100% + 50px);
+	opacity:.7;
+	-webkit-transition:opacity 0.35s,-webkit-transform .35s;
+	transition:opacity 0.35s,transform .35s;
+	-webkit-transform:translate3d(-40px,0,0);
+	transform:translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+	text-align:left;
+}
+
+figure.effect-lily figcaption > div {
+	position:absolute;
+	bottom:0;
+	padding:2em;
+	height:50%;
+}
+
+figure.effect-lily h2,figure.effect-lily p {
+	-webkit-transform:translate3d(0,40px,0);
+	transform:translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition:-webkit-transform .35s;
+	transition:transform .35s;
+}
+
+figure.effect-lily p {
+	opacity:0;
+	-webkit-transition:opacity 0.2s,-webkit-transform .35s;
+	transition:opacity 0.2s,transform .35s;
+}
+
+figure.effect-lily:hover img,figure.effect-lily:hover p {
+	opacity:1;
+}
+
+figure.effect-lily:hover img,figure.effect-lily:hover h2,figure.effect-lily:hover p {
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay:.05s;
+	transition-delay:.05s;
+	-webkit-transition-duration:.35s;
+	transition-duration:.35s;
+}

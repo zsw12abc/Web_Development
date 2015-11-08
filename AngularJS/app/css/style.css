@@ -1,0 +1,149 @@
+body {
+	background:url(../img/background.jpg);
+}
+
+a {
+	text-decoration:none;
+	color:#2b2457;
+	transition-delay:0;
+	transition-duration:.36s;
+	transition-property:all;
+	transition-timing-function:line;
+}
+
+nav a:hover {
+	font-weight:400;
+}
+
+nav,nav:hover {
+	padding:1em;
+}
+
+nav a {
+	text-indent:-200px;
+}
+
+nav:hover a {
+	text-indent:0;
+	color:#210f45;
+}
+
+svg,a {
+	vertical-align:top;
+}
+
+nav {
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	display:block;
+	height:auto;
+	min-width:40px;
+	width:80px;
+	background:url(../img/nav.jpg) repeat-y;
+	transition-delay:0;
+	transition-duration:.4s;
+	transition-property:all;
+	transition-timing-function:line;
+	z-index:500;
+}
+
+nav:hover {
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	height:auto;
+	width:250px;
+	background:url(../img/navigation.jpg) no-repeat;
+}
+
+nav a {
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	filter:alpha(opacity=0);
+	opacity:0;
+	margin-left:1em;
+}
+
+nav:hover a {
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	filter:alpha(opacity=100);
+	opacity:1;
+}
+
+li {
+	display:block;
+	padding:.2em;
+	height:32px;
+}
+
+svg,a {
+	display:inline-block;
+}
+
+ul#submenu {
+	background:url(../img/submeanu.jpg);
+	color:#dcf425;
+}
+
+footer {
+	position:fixed;
+	right:0;
+	top:0;
+	bottom:0;
+	display:block;
+	height:auto;
+	min-width:40px;
+	width:80px;
+	background:url(../img/nav.jpg) repeat-y;
+	transition-delay:0;
+	transition-duration:.4s;
+	transition-property:all;
+	transition-timing-function:line;
+	z-index:500;
+}
+
+footer:hover {
+	position:fixed;
+	right:0;
+	top:0;
+	bottom:0;
+	height:auto;
+	width:250px;
+	background:url(../img/navigation.jpg) no-repeat;
+}
+
+footer a {
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	filter:alpha(opacity=0);
+	opacity:0;
+	margin-left:1em;
+}
+
+footer:hover a {
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	filter:alpha(opacity=100);
+	opacity:1;
+}
+
+footer a:hover {
+	font-weight:400;
+}
+
+footer,footer:hover {
+	padding:1em;
+}
+
+footer a {
+	text-indent:-200px;
+}
+
+footer:hover a {
+	text-indent:0;
+	color:#210f45;
+}
+
+#main {
+	background:url(../img/header.jpg) no-repeat;
+}
